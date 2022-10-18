@@ -31,7 +31,7 @@
                         <li class="nav-item"><a class="nav-link" href="#projects">호텔</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup">게시판</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup">날씨</a></li>
-                        <input type="submit" id="login" value="로그인">
+                        <li class="nav-item"><a class="nav-link" href="#signup">로그인</a></li>
                     </ul>
                 </div>
             </div>
