@@ -43,7 +43,6 @@
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">BITTRIP</h1>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">비트트립에 오신것을 환영합니다.</h2>
-                        <a class="btn btn-primary" href="#about">Get Started</a>
                     </div>
                 </div>
             </div>
