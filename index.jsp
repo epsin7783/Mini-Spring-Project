@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Grayscale - Start Bootstrap Theme</title>
+        <title>BITTRIP</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -27,11 +27,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">여행정보(코로나)</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">호텔</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup">게시판</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup">날씨</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup">로그인</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.jsp">여행정보(코로나)</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hotel.jsp">호텔</a></li>
+                        <li class="nav-item"><a class="nav-link" href="board.jsp">게시판</a></li>
+                        <li class="nav-item"><a class="nav-link" href="weather.jsp">날씨</a></li>
+                        <li class="nav-item"><a class="nav-link" href="signup.jsp">로그인</a></li>
                     </ul>
                 </div>
             </div>
