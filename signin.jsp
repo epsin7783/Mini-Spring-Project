@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<%@ page contentType="text/html;charset=utf-8"%>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>BITTRIP</title>
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<!-- Font Awesome icons (free version)-->
+<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
+	crossorigin="anonymous"></script>
+<!-- Google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Varela+Round"
+	rel="stylesheet" />
+<link
+	href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+	rel="stylesheet" />
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+	<!-- Navigation-->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top"
+		id="mainNav">
+		<div class="container px-4 px-lg-5">
+			<a class="navbar-brand" href="#page-top">BITTRIP</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+				aria-controls="navbarResponsive" aria-expanded="false"
+				aria-label="Toggle navigation">
+				Menu <i class="fas fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a class="nav-link" href="about.jsp">여행정보(코로나)</a></li>
+					<li class="nav-item"><a class="nav-link" href="hotel.jsp">호텔</a></li>
+					<li class="nav-item"><a class="nav-link" href="board.jsp">게시판</a></li>
+					<li class="nav-item"><a class="nav-link" href="weather.jsp">날씨</a></li>
+					<li class="nav-item"><a class="nav-link" href="signin.jsp">로그인</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Masthead-->
+	<header class="masthead">
+		<div
+			class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+			<div class="d-flex justify-content-center">
+				<div class="text-center">
+					<div id="con">
+						<div id="login">
+							<div id="login_form">
+								<!--로그인 폼-->
+								<form>
+									<h3 class="login" style="letter-spacing: -1px;">Sign in to
+										BITTRIP</h3>
+
+									<!-- <p>
+										<input type="submit" value="Sign in with Google" class="btn"
+											style="background-color: #217Af0">
+									</p> -->
+
+									<hr>
+									<label> <!-- <span>ID</span> -->
+										<p style="text-align: left; font-size: 12px; color: #666">Username</p>
+										<input type="text" placeholder="아이디를 입력" class="size">
+										<!-- <input type="submit" value="확인"> -->
+										<p></p>
+									</label> <label> <!-- <span>PW</span> -->
+										<p style="text-align: left; font-size: 12px; color: #666">Password
+										</p> <input type="text" placeholder="비밀번호를 입력" class="size">
+										<!-- <input type="submit" value="확인"> -->
+									</label>
+	
+									
+									<p>
+										<input type="submit" value="Sign in" class="log_btn">
+									</p>
+									<hr>
+								</form>
+								
+								<p class="find">
+									<span>
+									<a href="">아이디 찾기</a></span> 
+									<span>
+									<a href="">비밀번호찾기</a></span>
+									 <span>
+									 <a href="signup.jsp">회원가입</a></span>
+								</p>
+							</div>
+							<div></div>
+
+
+
+						</div>
+					</div>
+				</div>
+	</header>
+
+
+	<!-- Bootstrap core JS-->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Core theme JS-->
+	<script src="js/scripts.js"></script>
+	<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+	<!-- * *                               SB Forms JS                               * *-->
+	<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+	<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+	<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>
