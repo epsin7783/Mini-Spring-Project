@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<%@ page contentType = "text/html;charset=utf-8" %>
+<%@ page contentType="text/html;charset=utf-8"%>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -41,15 +41,88 @@
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">BOARD 게시판!!</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">비트트립에 오신것을 환영합니다.</h2>
+                        <div class="row">
+	<div class="col-lg-12">
+		<h1 class="page-header">게시판</h1>
+	</div>
+	<!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row" style="background-color:white; width:900px; height:650px; border:1">
+	<div class="col-lg-12">
+		<div class="panel panel-default" >
+			<div class="panel-heading">
+				<button id='regBtn' type="button" class="btn btn-Secondary" style="float:right;">글쓰기</button>
+			</div>
+			<!-- /.panel-heading -->
+			<div class="panel-body">
+				<table class="table table-striped table-bordered table-hover" >
+					<thead>
+						<tr>
+							<th style="width:100px">#번호</th>
+							<th style="width:600px">제목</th>
+							<th style="width:100px">작성자</th>
+							<th style="width:100px">작성일</th>
+						</tr>
+					</thead>
+										<c:forEach items="${list}" var="board">
+						<tr>
+							<td><c:out value="${board.bno}" /></td>
+							<td><a href='/board/get?bno=<c:out value="${board.bno }"/>'>
+									<c:out value="${board.title}" />
+							</a></td>
+							<td><c:out value="${board.writer}" /></td>
+							<td><fmt:formatDate pattern="yyyy-MM-dd"
+									value="${board.regDate}" /></td>
+							<td><fmt:formatDate pattern="yyyy-MM-dd"
+									value="${board.updateDate}" /></td>
+						</tr>
+					</c:forEach>
+
+				</table>
+				</div>
+				<!-- .modal -->
+
+
+			</div>
+			<!-- /.panel-body -->
+		</div>
+		<!-- /.panel -->
+	</div>
+	<!-- /.col-lg-12 -->
+</div>
+
+<script>
+	$(document).ready(
+			function() {
+				var result = '<c:out value="${result}"/>';
+
+				checkModal(result);
+
+				function checkModal(result) {
+					if (result === '') {
+						return;
+					}
+
+					if (parseInt(result) > 0) {
+						$(".modal-body").html(
+								"게시글 " + parseInt(result) + "번이 등록되었습니다.");
+					}
+					$("#myModal").modal("show");
+				}
+
+				$("#regBtn").on("click", function() {
+					self.location = "/board/register";
+				});
+			});
+</script>
+                        
                     </div>
                 </div>
             </div>
         </header>
-
 <%@include file="/resources/includes/footer.jsp" %>
-        
+
                 <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
