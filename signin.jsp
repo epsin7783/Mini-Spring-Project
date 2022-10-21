@@ -26,7 +26,7 @@
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top"
 		id="mainNav">
 		<div class="container px-4 px-lg-5">
-			<a class="navbar-brand" href="index.jsp">BITTRIP</a>
+			<a class="navbar-brand" href="#page-top">BITTRIP</a>
 			<button class="navbar-toggler navbar-toggler-right" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
 				aria-controls="navbarResponsive" aria-expanded="false"
@@ -65,15 +65,20 @@
 
 									<hr>
 									<label> <!-- <span>ID</span> -->
-										<p style="text-align: left; font-size: 12px; color: #666">Username</p>
-										<input type="text" placeholder="아이디를 입력" class="size">
+									<div style="text-align : left; font-size: 12px; color: #666">
+										<b>ID</b>
+									</div>
+										<input type="text" placeholder="아이디를 입력" class="size" required>
 										<!-- <input type="submit" value="확인"> -->
 										<p></p>
-									</label> <label> <!-- <span>PW</span> -->
-										<p style="text-align: left; font-size: 12px; color: #666">Password
-										</p> <input type="text" placeholder="비밀번호를 입력" class="size">
+									</label> <br>
+									<label> <!-- <span>PW</span> -->
+									<div style="text-align : left; font-size: 12px; color: #666">
+										<b>Password</b>
+									</div>
+										 <input type="text" placeholder="비밀번호를 입력" class="size" required>
 										<!-- <input type="submit" value="확인"> -->
-									</label>
+									</label><br><br>
 	
 									
 									<p>
@@ -83,10 +88,6 @@
 								</form>
 								
 								<p class="find">
-									<span>
-									<a href="">아이디 찾기</a></span> 
-									<span>
-									<a href="">비밀번호찾기</a></span>
 									 <span>
 									 <a href="signup.jsp">회원가입</a></span>
 								</p>
