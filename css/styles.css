@@ -11695,13 +11695,16 @@ body {
   color: #fff;
 }
 
+/* 로그인, 회원가입 css*/
 .footer {
   padding: 5rem 0;
 }
 @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 100;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');}
 @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 300;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 500;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
 
-
+.login_form.join_title{
+  text-align: left;
+}
 
 a{
   text-decoration: none;
@@ -11742,11 +11745,43 @@ a{
   border-radius: 5px;
 }
 
+
+.add1{
+  width:195px;
+  height:30px;
+  padding-left:10px;
+  background-color: #f4f4f4;
+  /* margin-left:10px; */
+  border:none;
+  border-radius: 5px;
+}
+.add{
+  width:300px;
+  height:30px;
+  padding-left:10px;
+  background-color: #f4f4f4;
+  /* margin-left:10px; */
+  border: #1cabc4;
+  border-radius: 5px;
+ 
+}
+
+.add_btn{
+  width: 100px;
+  height: 30px;
+  font-size: 5px;
+  background-color: mediumturquoise;
+  color:#fff;
+  border:none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 .log_btn{
   width:310px;
   height: 40px;
   font-size:15px;
-  background-color: #df3278;
+  background-color: mediumturquoise;
   color:#fff;
   border:none;
   cursor: pointer;
@@ -11792,7 +11827,7 @@ a{
 .num2{
   width:235px;
 }
-
+/* 로그인, 회원가입 css*/
 
 
 
