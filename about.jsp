@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <%@ page contentType = "text/html;charset=utf-8" %>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>BITTRIP</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>BITTRIP</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -42,7 +43,7 @@
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">여행지 정보</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">아래 표를 확인하시고 여행을 생각하시는 나라의 정보를 확인하세요</h2>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">아래 표를 확인하시고 여행을 생각하시는 나라의 <br>정보를 확인하세요</br></h2>
                     </div>
                 </div>
             </div>
@@ -50,10 +51,14 @@
         
         
         <!-- 여행경보-->
-        <section>
-        	<br>
-        	<div style="width: 70%;  margin-right: auto; margin-left: auto;">
-        		<a href="https://www.0404.go.kr/walking/walking_intro.jsp" ><img alt="여행경보 단계" src="../assets/img/TravelWarning.jpg"></a>
+        <section class="travelWarning">
+        	<p>&nbsp;</p>
+        	<div><p style="text-align: center;">
+				<span style="font-size: 36px;"><strong>여행경보단계</strong></span><span style="font-size: 18px;"><strong>&nbsp;</strong></span></p>
+			</div>
+        	<div style="width: 60%;  margin-right: auto; margin-left: auto;">
+        		<img src="../resources/assets/img/TravelWarning.jpg" alt="여행경보 단계" />
+        		<h5>※ 더 자세한 사항을 확인하시고 싶으신 분은 <a href="https://www.0404.go.kr/walking/walking_intro.jsp" target="blank"><span style="text-decoration: underline;">외교부 홈페이지</span></a>를 참고하세요.</h5>
         	</div>
         	<br>
         </section>
@@ -63,143 +68,137 @@
         
         <section class="여행가능지역">     
 		<main> 			 			 			 		 			 			 			 		 			 			 			 		 			 			 			 		
-		<div class="inside">
-								<div doz_type="row" doz_grid="12" class="doz_row">
-									<div doz_type="grid" doz_grid="12" class="col-dz col-dz-12">
-										<div doz_type="widget" id="w202111025a1a32200d8e6">
-											<div class="_widget_data _ds_animated_except" data-widget-name="여백" data-widget-type="padding"    data-widget-parent-is-mobile="N">
-												<div class="widget padding" data-height="30" style="margin-top:px; margin-bottom:px;">
-													<div id="padding_w202111025a1a32200d8e6" style="width:100%; min-height:1px; height:30px; "></div>
-												</div>
+			<div class="inside">
+				<div doz_type="row" doz_grid="12" class="doz_row">
+					<div doz_type="grid" doz_grid="12" class="col-dz col-dz-12">
+						<div doz_type="widget" id="w202111025a1a32200d8e6">
+							<div class="_widget_data _ds_animated_except" data-widget-name="여백" data-widget-type="padding"    data-widget-parent-is-mobile="N">
+								<div class="widget padding" data-height="30" style="margin-top:px; margin-bottom:px;">
+									<div id="padding_w202111025a1a32200d8e6" style="width:100%; min-height:1px; height:30px; "></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div doz_type="row" doz_grid="12" class="doz_row">
+						<div doz_type="grid" doz_grid="12" class="col-dz col-dz-12">
+							<div doz_type="widget" id="w202111022f9f755dd6a82">
+								<div class="_widget_data " data-widget-name="텍스트" data-widget-type="text" data-widget-anim="none" data-widget-anim-duration="0.7" data-widget-anim-delay="0" data-widget-parent-is-mobile="N">
+									<div doz_type="text" class="widget _text_wrap widget_text_wrap fr-view  default_padding " id="text_w202111022f9f755dd6a82" >
+										<div class="text-table ">
+											<div><p style="text-align: center;">
+												<span style="font-size: 36px;"><strong>여행가능지역</strong></span><span style="font-size: 18px;"><strong>&nbsp;</strong></span></p>
 											</div>
-										</div>
+										</div>		
 									</div>
 								</div>
-									<div doz_type="row" doz_grid="12" class="doz_row">
-										<div doz_type="grid" doz_grid="12" class="col-dz col-dz-12">
-											<div doz_type="widget" id="w202111022f9f755dd6a82">
-												<div class="_widget_data " data-widget-name="텍스트" data-widget-type="text" data-widget-anim="none" data-widget-anim-duration="0.7" data-widget-anim-delay="0" data-widget-parent-is-mobile="N">
-													<div doz_type="text" class="widget _text_wrap widget_text_wrap fr-view  default_padding " id="text_w202111022f9f755dd6a82" >
-														<div class="text-table ">
-															<div><p style="text-align: center;">
-																<span style="font-size: 36px;"><strong>여행가능지역</strong></span><span style="font-size: 18px;"><strong>&nbsp;</strong></span></p>
-															</div>
-														</div>		
-													</div>
-												</div>
-											</div>
+							</div>
+						</div>
+					</div>
+				<div doz_type="row" doz_grid="12" class="doz_row">
+					<div doz_type="grid" doz_grid="12" class="col-dz col-dz-12">
+						<div doz_type="widget" id="w202111025c3ddfa18f98c">
+							<div class="_widget_data " data-widget-name="텍스트" data-widget-type="text" data-widget-anim="none" data-widget-anim-duration="0.7" data-widget-anim-delay="0" data-widget-parent-is-mobile="N">
+								<div doz_type="text" class="widget _text_wrap widget_text_wrap fr-view  default_padding " id="text_w202111025c3ddfa18f98c" >
+									<div class="text-table ">
+										<div><p><br></p>
+											<table style="border: 1px solid lightgray; width: 70%;  margin-right: auto; margin-left: auto;">
+												<tbody>
+													<tr style="border: 1px solid lightgray;">
+														<td style="width: 15.84%; background-color: rgb(111, 168, 220); border: 1px solid lightgray;">
+															<div style="text-align: center; border: 1px solid lightgray;">지역</div>
+														</td>
+														<td style="width: 16.4875%; text-align: center; background-color: rgb(111, 168, 220); border: 1px solid lightgray;"><strong>국가</strong></td>
+														<td style="width: 24.9925%; background-color: rgb(111, 168, 220); border: 1px solid lightgray;">
+															<div style="text-align: center; border: 1px solid lightgray;"><strong>항공현황</strong></div>
+														</td>
+														<td style="width: 42.6875%; background-color: rgb(111, 168, 220); border: 1px solid lightgray;">
+															<div style="text-align: center; border: 1px solid lightgray;"><strong>입국정책</strong></div>
+														</td>
+													</tr>
+													<tr>
+														<td rowspan="6" style="width: 15.76%; text-align: center; background-color: rgb(208, 224, 227); border: 1px solid lightgray;"><strong>서유럽</strong></td>
+														<td style="width: 16.4875%; text-align: center; border: 1px solid lightgray;" >영국</td>
+														<td style="width: 24.9925%; border: 1px solid lightgray;"><strong>런던 : 11월 부터<br></strong>*대한항공 : 매일 운항 예정<br>*아시아나 : 금요일 운항 예정<br>*브리티시에어라인 : 운항중단</td>
+														<td style="width: 42.6875%; border: 1px solid lightgray;">*한국국적자 무비자 입국 가능<br>*10월 4일 부로 자가격리 해제<br>*영국정부사이트 (GOV.UK)에서 입국 48시간 전 온라인으로 승객위치 질문서(Pasenger Locator Form)을 작성하여 영국 입국시 출입국 심사대에 제출</td>
+													</tr>
+													<tr>
+														<td style="width: 16.4875%; text-align: center; border: 1px solid lightgray;">프랑스</td>
+														<td style="width: 24.9925%; border: 1px solid lightgray;"><strong>파리 : 11월 부터</strong><br>*대한항공 : 월수토 운항 예정<br>*아시아나 : 운항 중단<br>*에어프랑스 : 월목토 예정</td>
+														<td style="width: 42.6875%; border: 1px solid lightgray;">*한국국적자 무비자 입국 가능<br>(단, 백신 접종을 한경우 파리 입국 가능)<br>-한국 등 방역 우수국가에 한정된 특별입국허가<br>-자가격리와 72시간 이전 PCR 음성 확인서 없이 입국허용<br>*EU 전 국가들에서 통용되는 보건패스 신청 필요<br>(화이자, 모더나, 아스트라 제네카, 얀센)</td>
+													</tr>
+													<tr>
+														<td style="width: 16.4875%; text-align: center; border: 1px solid lightgray;">독일</td>
+														<td style="width: 24.9925%; border: 1px solid lightgray;"><strong>프랑크푸르트 : 11월 부터</strong><br>*대한항공 : 목토 예정<br>*아시아나 : 월수금일 예정<br>*루프트한자 : 월화수금일 예정<br><br><strong>뮌헨 : 11월 부터</strong><br>*루프트한자 : 화목금토일 예정</td>
+														<td style="width: 42.6875%; border: 1px solid lightgray;">*한국국적자 무비자 입국 가능<br>*자가 격리 없음<br>*백신접종증명서와 입국 72시간내 PCR검사 음성확인서 필요</td>
+													</tr>
+													<tr>
+														<td style="width: 16.4875%; text-align: center; border: 1px solid lightgray;">이탈리아</td>
+														<td style="width: 24.9925%; border: 1px solid lightgray;"><strong>로마 : 12월 부터</strong><br>*대한항공 : 월화목토일 예정<br>*아시아나 : 운항 중단<br><br><strong>밀라노 : 11월 부터</strong><br>*대한항공 : 월수금일<br><br><strong>베니스 : 11월 부터</strong><br>*아시아나 : 운항중단</td>
+														<td style="width: 42.6875%; border: 1px solid lightgray;">*한국국적자 무비자 입국 가능<br>*자가 격리 없음<br>*백신접종증명서와 입국 72시간내 PCR검사 음성확인서 필요<br>*EU Digital Passenger locator Form 필수<br>*실내식당 및 중장거리 운송수단, 박물관 등의 입장을 위해 48시간이내 실시한 항원검사 증명서가 필요함</td>
+													</tr>
+													<tr>
+														<td style="width: 16.4875%; text-align: center; border: 1px solid lightgray;">스페인<br>포르투칼<br>모로코</td>
+														<td style="width: 24.9925%; border: 1px solid lightgray;"><strong>바르셀로나 : 11월 부터</strong><br>*대한항공 : 임시중단<br>*아시아나 : 임시중단<br><br><strong>마드리드 : 11월 부터</strong><br>*대한항공 : 임시중단<br><br><strong>리스본 : 11월 부터</strong><br>*아시아나 : 임시중단</td>
+														<td style="width: 42.6875%; border: 1px solid lightgray;"><strong>현재 스페인은 직항이 없어 핀에어 등 경유편을 이용합니다.&nbsp;</strong><br><strong><br></strong>1.스페인 / 포르투칼 : 한국국적자 무비자 입국 가능<br>*코로나 19 음성 확인서는 필요 없으나 도착 48시간 이내 (www.spth.gob.es)에서 특별검역신고서를 작성하고 QR 코드를 발급받아야 함<br>*QR코드제시 - 발열체크 - 대면심사 3단계의 특별검역절차를 거침<br><br>2.모로코 : 백신 접종 또는 PCR 음성 증명서 공항에서 제출 후 입국 (격리 없음)</td>
+													</tr>
+													<tr>
+														<td style="width: 16.4875%; text-align: center; border: 1px solid lightgray;">네덜란드<br>벨기에<br>스위스<br>몰타</td>
+														<td style="width: 24.9925%; border: 1px solid lightgray;">암스텔담 : 11월 부터<br>*대한항공 : 화토 운항<br>*KLM : 월화수금토일<br><br>취리히 : 11월 부터<br>*대한항공 : 임시중단</td>
+														<td style="width: 42.6875%; border: 1px solid lightgray;">1.스위스 : 한국 국적자 무비자 입국가능<br>*입국 72시간 전 PCR 테스트 음성 결과지 필수<br><br>2.네덜란드 : 한국 국적자 입국가능<br>3.벨기에 : 한국 국적자 입국가능<br>4.몰타 : 한국 국적자 입국 가능</td>
+													</tr>
+												</tbody>
+											</table>
 										</div>
-									</div>
-								<div doz_type="row" doz_grid="12" class="doz_row">
-									<div doz_type="grid" doz_grid="12" class="col-dz col-dz-12">
-										<div doz_type="widget" id="w202111025c3ddfa18f98c">
-											<div class="_widget_data " data-widget-name="텍스트" data-widget-type="text" data-widget-anim="none" data-widget-anim-duration="0.7" data-widget-anim-delay="0" data-widget-parent-is-mobile="N">
-												<div doz_type="text" class="widget _text_wrap widget_text_wrap fr-view  default_padding " id="text_w202111025c3ddfa18f98c" >
-													<div class="text-table ">
-														<div><p><br></p>
-															<table style="border: 1px solid lightgray; width: 70%;  margin-right: auto; margin-left: auto;">
-																<tbody>
-																	<tr style="border: 1px solid lightgray;">
-																		<td style="width: 15.84%; background-color: rgb(111, 168, 220); border: 1px solid lightgray;">
-																			<div style="text-align: center; border: 1px solid lightgray;">지역</div>
-																		</td>
-																		<td style="width: 16.4875%; text-align: center; background-color: rgb(111, 168, 220); border: 1px solid lightgray;"><strong>국가</strong></td>
-																		<td style="width: 24.9925%; background-color: rgb(111, 168, 220); border: 1px solid lightgray;">
-																			<div style="text-align: center; border: 1px solid lightgray;"><strong>항공현황</strong></div>
-																		</td>
-																		<td style="width: 42.6875%; background-color: rgb(111, 168, 220); border: 1px solid lightgray;">
-																			<div style="text-align: center; border: 1px solid lightgray;"><strong>입국정책</strong></div>
-																		</td>
-																	</tr>
-																	<tr>
-																		<td rowspan="6" style="width: 15.76%; text-align: center; background-color: rgb(208, 224, 227); border: 1px solid lightgray;"><strong>서유럽</strong></td>
-																		<td style="width: 16.4875%; text-align: center; border: 1px solid lightgray;" >영국</td>
-																		<td style="width: 24.9925%; border: 1px solid lightgray;"><strong>런던 : 11월 부터<br></strong>*대한항공 : 매일 운항 예정<br>*아시아나 : 금요일 운항 예정<br>*브리티시에어라인 : 운항중단</td>
-																		<td style="width: 42.6875%; border: 1px solid lightgray;">*한국국적자 무비자 입국 가능<br>*10월 4일 부로 자가격리 해제<br>*영국정부사이트 (GOV.UK)에서 입국 48시간 전 온라인으로 승객위치 질문서(Pasenger Locator Form)을 작성하여 영국 입국시 출입국 심사대에 제출</td>
-																	</tr>
-																	<tr>
-																		<td style="width: 16.4875%; text-align: center; border: 1px solid lightgray;">프랑스</td>
-																		<td style="width: 24.9925%; border: 1px solid lightgray;"><strong>파리 : 11월 부터</strong><br>*대한항공 : 월수토 운항 예정<br>*아시아나 : 운항 중단<br>*에어프랑스 : 월목토 예정</td>
-																		<td style="width: 42.6875%; border: 1px solid lightgray;">*한국국적자 무비자 입국 가능<br>(단, 백신 접종을 한경우 파리 입국 가능)<br>-한국 등 방역 우수국가에 한정된 특별입국허가<br>-자가격리와 72시간 이전 PCR 음성 확인서 없이 입국허용<br>*EU 전 국가들에서 통용되는 보건패스 신청 필요<br>(화이자, 모더나, 아스트라 제네카, 얀센)</td>
-																	</tr>
-																	<tr>
-																		<td style="width: 16.4875%; text-align: center; border: 1px solid lightgray;">독일</td>
-																		<td style="width: 24.9925%; border: 1px solid lightgray;"><strong>프랑크푸르트 : 11월 부터</strong><br>*대한항공 : 목토 예정<br>*아시아나 : 월수금일 예정<br>*루프트한자 : 월화수금일 예정<br><br><strong>뮌헨 : 11월 부터</strong><br>*루프트한자 : 화목금토일 예정</td>
-																		<td style="width: 42.6875%; border: 1px solid lightgray;">*한국국적자 무비자 입국 가능<br>*자가 격리 없음<br>*백신접종증명서와 입국 72시간내 PCR검사 음성확인서 필요</td>
-																	</tr>
-																	<tr>
-																		<td style="width: 16.4875%; text-align: center; border: 1px solid lightgray;">이탈리아</td>
-																		<td style="width: 24.9925%; border: 1px solid lightgray;"><strong>로마 : 12월 부터</strong><br>*대한항공 : 월화목토일 예정<br>*아시아나 : 운항 중단<br><br><strong>밀라노 : 11월 부터</strong><br>*대한항공 : 월수금일<br><br><strong>베니스 : 11월 부터</strong><br>*아시아나 : 운항중단</td>
-																		<td style="width: 42.6875%; border: 1px solid lightgray;">*한국국적자 무비자 입국 가능<br>*자가 격리 없음<br>*백신접종증명서와 입국 72시간내 PCR검사 음성확인서 필요<br>*EU Digital Passenger locator Form 필수<br>*실내식당 및 중장거리 운송수단, 박물관 등의 입장을 위해 48시간이내 실시한 항원검사 증명서가 필요함</td>
-																	</tr>
-																	<tr>
-																		<td style="width: 16.4875%; text-align: center; border: 1px solid lightgray;">스페인<br>포르투칼<br>모로코</td>
-																		<td style="width: 24.9925%; border: 1px solid lightgray;"><strong>바르셀로나 : 11월 부터</strong><br>*대한항공 : 임시중단<br>*아시아나 : 임시중단<br><br><strong>마드리드 : 11월 부터</strong><br>*대한항공 : 임시중단<br><br><strong>리스본 : 11월 부터</strong><br>*아시아나 : 임시중단</td>
-																		<td style="width: 42.6875%; border: 1px solid lightgray;"><strong>현재 스페인은 직항이 없어 핀에어 등 경유편을 이용합니다.&nbsp;</strong><br><strong><br></strong>1.스페인 / 포르투칼 : 한국국적자 무비자 입국 가능<br>*코로나 19 음성 확인서는 필요 없으나 도착 48시간 이내 (www.spth.gob.es)에서 특별검역신고서를 작성하고 QR 코드를 발급받아야 함<br>*QR코드제시 - 발열체크 - 대면심사 3단계의 특별검역절차를 거침<br><br>2.모로코 : 백신 접종 또는 PCR 음성 증명서 공항에서 제출 후 입국 (격리 없음)</td>
-																	</tr>
-																	<tr>
-																		<td style="width: 16.4875%; text-align: center; border: 1px solid lightgray;">네덜란드<br>벨기에<br>스위스<br>몰타</td>
-																		<td style="width: 24.9925%; border: 1px solid lightgray;">암스텔담 : 11월 부터<br>*대한항공 : 화토 운항<br>*KLM : 월화수금토일<br><br>취리히 : 11월 부터<br>*대한항공 : 임시중단</td>
-																		<td style="width: 42.6875%; border: 1px solid lightgray;">1.스위스 : 한국 국적자 무비자 입국가능<br>*입국 72시간 전 PCR 테스트 음성 결과지 필수<br><br>2.네덜란드 : 한국 국적자 입국가능<br>3.벨기에 : 한국 국적자 입국가능<br>4.몰타 : 한국 국적자 입국 가능</td>
-																	</tr>
-																</tbody>
-															</table>
-														</div>
-													</div>		
-												</div>
-											</div>
-										</div>
-									</div>
+									</div>		
 								</div>
-								
-								<div doz_type="row" doz_grid="12" class="doz_row">
-									<div doz_type="grid" doz_grid="12" class="col-dz col-dz-12">
-										<div doz_type="widget" id="w20211102a48aadc22d275">
-											<div class="_widget_data _ds_animated_except" data-widget-name="여백" data-widget-type="padding"    data-widget-parent-is-mobile="N">
-												<div class="widget padding" data-height="30" style="margin-top:px; margin-bottom:px;">
-													<div id="padding_w20211102a48aadc22d275" style="width:100%; min-height:1px; height:30px; "></div>
-												</div>
-											</div>
-										</div>
-									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div doz_type="row" doz_grid="12" class="doz_row">
+					<div doz_type="grid" doz_grid="12" class="col-dz col-dz-12">
+						<div doz_type="widget" id="w20211102a48aadc22d275">
+							<div class="_widget_data _ds_animated_except" data-widget-name="여백" data-widget-type="padding"    data-widget-parent-is-mobile="N">
+								<div class="widget padding" data-height="30" style="margin-top:px; margin-bottom:px;">
+									<div id="padding_w20211102a48aadc22d275" style="width:100%; min-height:1px; height:30px; "></div>
 								</div>
-								
-								<div doz_type="row" doz_grid="12" class="doz_row">
-									<div doz_type="grid" doz_grid="12" class="col-dz col-dz-12">
-										<div doz_type="widget" id="w20211102fa7a8cb7fd524">
-											<div class="_widget_data " data-widget-name="가로선" data-widget-type="hr" data-widget-anim="none" data-widget-anim-duration="0.7" data-widget-anim-delay="0" data-widget-parent-is-mobile="N">
-												<div class="widget line type01 _hide" id="hr_w20211102fa7a8cb7fd524">
-													<div class="line_box holder" style="width: 65%;  margin-right: auto; margin-left: auto;">
-													<hr style="border-top-width:3px; border-color:rgba(0, 0, 0, 0.05);" />	
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								<div doz_type="row" doz_grid="12" class="doz_row">
-									<div doz_type="grid" doz_grid="12" class="col-dz col-dz-12">
-										<div doz_type="widget" id="w202111025a1a32200d8e6">
-											<div class="_widget_data _ds_animated_except" data-widget-name="여백" data-widget-type="padding"    data-widget-parent-is-mobile="N">
-												<div class="widget padding" data-height="30" style="margin-top:px; margin-bottom:px;">
-													<div id="padding_w202111025a1a32200d8e6" style="width:100%; min-height:1px; height:30px; "></div>
-												</div>
-											</div>
-										</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div doz_type="row" doz_grid="12" class="doz_row">
+					<div doz_type="grid" doz_grid="12" class="col-dz col-dz-12">
+						<div doz_type="widget" id="w20211102fa7a8cb7fd524">
+							<div class="_widget_data " data-widget-name="가로선" data-widget-type="hr" data-widget-anim="none" data-widget-anim-duration="0.7" data-widget-anim-delay="0" data-widget-parent-is-mobile="N">
+								<div class="widget line type01 _hide" id="hr_w20211102fa7a8cb7fd524">
+									<div class="line_box holder" style="width: 65%;  margin-right: auto; margin-left: auto;">
+									<hr style="border-top-width:3px; border-color:rgba(0, 0, 0, 0.05);" />	
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				
+				<div doz_type="row" doz_grid="12" class="doz_row">
+					<div doz_type="grid" doz_grid="12" class="col-dz col-dz-12">
+						<div doz_type="widget" id="w202111025a1a32200d8e6">
+							<div class="_widget_data _ds_animated_except" data-widget-name="여백" data-widget-type="padding"    data-widget-parent-is-mobile="N">
+								<div class="widget padding" data-height="30" style="margin-top:px; margin-bottom:px;">
+									<div id="padding_w202111025a1a32200d8e6" style="width:100%; min-height:1px; height:30px; "></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
+
 		</main>
 	
 		
-	
-			
 		<main>
 		<div doz_type="inside" class="inside">
 			<div doz_type="row" doz_grid="12" class="doz_row">
@@ -679,7 +678,9 @@
 	</main>
         
    	</section>
+   	
 
+<%@include file="/resources/includes/footer.jsp" %>
 
                 <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -690,5 +691,7 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        
+        
     </body>
 </html>
