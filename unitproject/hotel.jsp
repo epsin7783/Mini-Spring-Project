@@ -17,6 +17,12 @@
         <link href="../resources/css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+         <% 
+        String userID = null;
+    	if (session.getAttribute("userID") != null){
+            userID = (String) session.getAttribute("userID");
+    	}
+	%>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
@@ -25,13 +31,33 @@
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
+                
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
+                	<ul class="navbar-nav ms-auto">
+                <%
+                	if(userID == null){
+                %>
+                    
                         <li class="nav-item"><a class="nav-link" href="about">여행정보(코로나)</a></li>
                         <li class="nav-item"><a class="nav-link" href="hotel">호텔</a></li>
                         <li class="nav-item"><a class="nav-link" href="board">게시판</a></li>
                         <li class="nav-item"><a class="nav-link" href="weather">날씨</a></li>
                         <li class="nav-item"><a class="nav-link" href="signin">로그인</a></li>
+                    
+                    <%
+                	}else{
+                    %>
+                    
+                        <li class="nav-item"><a class="nav-link" href="about">여행정보(코로나)</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hotel">호텔</a></li>
+                        <li class="nav-item"><a class="nav-link" href="board">게시판</a></li>
+                        <li class="nav-item"><a class="nav-link" href="weather">날씨</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><%=userID %>님 환영합니다!</a></li>
+                        <li class="nav-item"><a class="nav-link" href="logoutAction">로그아웃</a></li>
+                    
+                    <% 
+                	}
+                    %>
                     </ul>
                 </div>
             </div>
@@ -47,7 +73,7 @@
             </div>
         </header>
 
-<%@include file="/resources/includes/footer.jsp" %>
+<%@include file="../includes/unitfooter.jsp" %>
         
                 <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
