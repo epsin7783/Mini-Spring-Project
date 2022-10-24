@@ -19,48 +19,69 @@ import lombok.extern.log4j.Log4j;
 @AllArgsConstructor
 public class unitProjectController {
 	private BoardService service;
+
 	@GetMapping("/index")
 	public void index(Model model) {
 		log.info("index");
-		model.addAttribute(("index"),service.getList());
+		model.addAttribute(("index"), service.getList());
 	}
-	
+
 	@GetMapping("/about")
 	public void about(Model model) {
 		log.info("about");
-		model.addAttribute(("about"),service.getList());
+		model.addAttribute(("about"), service.getList());
 	}
-	
+
 	@GetMapping("/board")
 	public void board(Model model) {
 		log.info("board");
-		model.addAttribute(("board"),service.getList());
+		model.addAttribute(("board"), service.getList());
 	}
-	
+
 	@GetMapping("/hotel")
 	public void hotel(Model model) {
 		log.info("hotel");
-		model.addAttribute(("hotel"),service.getList());
+		model.addAttribute(("hotel"), service.getList());
 	}
-	
+
 	@GetMapping("/signin")
 	public void signin(Model model) {
 		log.info("signin");
-		model.addAttribute(("signin"),service.getList());
+		model.addAttribute(("signin"), service.getList());
 	}
-	
+
 	@GetMapping("/signup")
 	public void signup(Model model) {
 		log.info("signup");
-		model.addAttribute(("signup"),service.getList());
+		model.addAttribute(("signup"), service.getList());
 	}
-	
+
 	@GetMapping("/weather")
 	public void weather(Model model) {
 		log.info("weather");
-		model.addAttribute(("weather"),service.getList());
+		model.addAttribute(("weather"), service.getList());
 	}
 	
+	@PostMapping("/signinAction")
+	public void signinAction(Model model) {
+		log.info("signinAction");
+		model.addAttribute(("signinAction"), service.getList());
+	}
+	
+	@PostMapping("/signupAction")
+	public void signupAction(Model model) {
+		log.info("signupAction");
+		model.addAttribute(("signupAction"), service.getList());
+	}
+	
+	@GetMapping("/logoutAction")
+	public void logoutAction(Model model) {
+		log.info("logoutAction");
+		model.addAttribute(("logoutAction"), service.getList());
+	}
+	
+	
+
 //	
 //	@PostMapping("/register")
 //	public String register(BoardVO board, RedirectAttributes rttr) {
@@ -100,5 +121,3 @@ public class unitProjectController {
 //		
 //	}
 }
-
-	
