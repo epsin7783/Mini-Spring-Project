@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <%@ page contentType="text/html;charset=utf-8"%>
+
 <html lang="en">
 <head>
 <meta charset="utf-8" />
@@ -22,6 +23,7 @@
         <link href="../resources/css/styles.css" rel="stylesheet" />
 </head>
 <body id="page-top">
+
 	<!-- Navigation-->
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top"
 		id="mainNav">
@@ -54,7 +56,7 @@
 						<div id="login">
 							<div id="login_form">
 								<!--로그인 폼-->
-								<form>
+								<form method="post" action="signinAction">
 									<h3 class="login" style="letter-spacing: -1px;">Sign in to
 										BITTRIP</h3>
 
@@ -68,7 +70,7 @@
 									<div style="text-align : left; font-size: 12px; color: #666">
 										<b>ID</b>
 									</div>
-										<input type="text" placeholder="아이디를 입력" class="size" required>
+										<input type="text" placeholder="아이디를 입력" class="size" name="userID" required>
 										<!-- <input type="submit" value="확인"> -->
 										<p></p>
 									</label> <br>
@@ -76,7 +78,8 @@
 									<div style="text-align : left; font-size: 12px; color: #666">
 										<b>Password</b>
 									</div>
-										 <input type="text" placeholder="비밀번호를 입력" class="size" required>
+										 <input type="password" placeholder="비밀번호" name="userPassword" class="size"
+										required>
 										<!-- <input type="submit" value="확인"> -->
 									</label><br><br>
 	
@@ -89,7 +92,7 @@
 								
 								<p class="find">
 									 <span>
-									 <a href="signup.jsp">회원가입</a></span>
+									 <a href="signup">회원가입</a></span>
 								</p>
 							</div>
 							<div></div>
@@ -101,7 +104,7 @@
 				</div>
 	</header>
 
-<%@include file="/resources/includes/footer.jsp" %>
+<%@include file="../includes/unitfooter.jsp" %>
 			
 			
 	<!-- Bootstrap core JS-->
