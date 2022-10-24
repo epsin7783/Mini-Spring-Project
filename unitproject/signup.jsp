@@ -9,7 +9,8 @@
 <meta name="description" content="" />
 <meta name="author" content="" />
 <title>BITTRIP</title>
-<link rel="icon" type="image/x-icon" href="../resources/assets/favicon.ico" />
+<link rel="icon" type="image/x-icon"
+	href="../resources/assets/favicon.ico" />
 <!-- Font Awesome icons (free version)-->
 <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
 	crossorigin="anonymous"></script>
@@ -20,7 +21,7 @@
 	href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
 	rel="stylesheet" />
 <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="../resources/css/styles.css" rel="stylesheet" />
+<link href="../resources/css/styles.css" rel="stylesheet" />
 </head>
 <body id="page-top">
 	<!-- Navigation-->
@@ -58,7 +59,7 @@
 						<div id="login">
 							<div id="login_form">
 								<!--로그인 폼-->
-								<form>
+								<form method="post" action="signupAction">
 									<h3 class="login" style="letter-spacing: -1px;">Sign up to
 										BITTRIP</h3>
 
@@ -71,7 +72,7 @@
 									<label> <!-- <span>NAME</span> -->
 										<div style="text-align: left; font-size: 12px; color: #666">
 											<b>Name</b>
-										</div> <input type="text" placeholder="이름" class="size" required>
+										</div> <input type="text" placeholder="이름" class="size" name="userName" required>
 										<p></p>
 									</label> <br>
 									<!-- 이름 -->
@@ -79,7 +80,7 @@
 									<label> <!-- <span>ID</span> -->
 										<div style="text-align: left; font-size: 12px; color: #666">
 											<b>ID</b>
-										</div> <input type="text" placeholder="아이디" class="size" required>
+										</div> <input type="text" placeholder="아이디" class="size" name="userID" required>
 										<p></p>
 									</label> <br>
 									<!--아이디-->
@@ -87,20 +88,19 @@
 									<label> <!-- <span>PW</span> -->
 										<div style="text-align: left; font-size: 12px; color: #666">
 											<b>Password</b>
-										</div> <input type="password" placeholder="비밀번호" class="size"
+										</div> <input type="password" placeholder="비밀번호" name="userPassword" class="size"
 										required>
 									</label> <br>
 									<!--비밀번호-->
 
-									<label> <!-- <span>PW</span> -->
+									<!-- <label> <span>PW</span>
 										<p style="text-align: left; font-size: 12px; color: #666">
 										</p> <input type="password" placeholder="비밀번호 확인" class="size"
 										required>
-									</label> <br>
-									<br>
-									<!--비밀번호 확인-->
+									</label> <br> <br>
+									비밀번호 확인 -->
 
-									<label> <!-- <span>PHONE</span> -->
+									<!-- <label> <span>PHONE</span>
 										<div style="text-align: left; font-size: 12px; color: #666">
 											<b>Mobile Phone</b>
 										</div> <select class="size num1">
@@ -110,7 +110,7 @@
 									</select> <input placeholder="-빼고 숫자만 입력" class="size num2" required>
 									</label> <br>
 									<br>
-									<!--전화번호-->
+									전화번호 -->
 
 
 
@@ -118,93 +118,28 @@
 									<label> <!-- <span>PW</span> -->
 										<div style="text-align: left; font-size: 12px; color: #666">
 											<b>Email</b>
-										</div> <input type="text" placeholder="이메일" class="size" required>
-									</label> <br>
-									<br>
+										</div> <input type="text" placeholder="이메일" class="size" name="userEmail" required>
+									</label> <br> <br>
 
 									<!--이메일-->
 
 									<label> <!-- <span>GENDER</span> -->
 										<div style="text-align: left; font-size: 12px; color: #666">
 											<b>Gender</b>
-										</div> <select class="size gender" required>
+										</div> <select class="size gender" name="userGender" required>
 											<option value="1" selected>남</option>
 											<option value="2" selected>여</option>
 											<option value="3" selected>선택 안함</option>
 											<option value="4" selected>성별</option>
 									</select>
-									</label> <br>
-									<br>
+									</label> <br> <br>
 									<!--성-->
 
-									<label> <!-- <span>ADDRESS</span> -->
-										<div style="text-align: left; font-size: 12px; color: #666">
-											<b>Address</b>
-										</div> <input type="text" id="sample6_postcode" placeholder="우편번호"
-										class="add1"> <input type="button"
-										onclick="sample6_execDaumPostcode()" value="우편번호 찾기"
-										class="add_btn"><br> <input type="text"
-										id="sample6_address" placeholder="주소" class="add"><br>
-										<input type="text" id="sample6_extraAddress"
-										placeholder="참고항목" class="add"><br> <input
-										type="text" id="sample6_detailAddress" placeholder="상세주소"
-										class="add"> <script
-											src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-										<script>
-									    function sample6_execDaumPostcode() {
-									        new daum.Postcode({
-									            oncomplete: function(data) {
-									                // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
-									
-									                // 각 주소의 노출 규칙에 따라 주소를 조합한다.
-									                // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
-									                var addr = ''; // 주소 변수
-									                var extraAddr = ''; // 참고항목 변수
-									
-									                //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
-									                if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
-									                    addr = data.roadAddress;
-									                } else { // 사용자가 지번 주소를 선택했을 경우(J)
-									                    addr = data.jibunAddress;
-									                }
-									
-									                // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
-									                if(data.userSelectedType === 'R'){
-									                    // 법정동명이 있을 경우 추가한다. (법정리는 제외)
-									                    // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
-									                    if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
-									                        extraAddr += data.bname;
-									                    }
-									                    // 건물명이 있고, 공동주택일 경우 추가한다.
-									                    if(data.buildingName !== '' && data.apartment === 'Y'){
-									                        extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
-									                    }
-									                    // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
-									                    if(extraAddr !== ''){
-									                        extraAddr = ' (' + extraAddr + ')';
-									                    }
-									                    // 조합된 참고항목을 해당 필드에 넣는다.
-									                    document.getElementById("sample6_extraAddress").value = extraAddr;
-									                
-									                } else {
-									                    document.getElementById("sample6_extraAddress").value = '';
-									                }
-									
-									                // 우편번호와 주소 정보를 해당 필드에 넣는다.
-									                document.getElementById('sample6_postcode').value = data.zonecode;
-									                document.getElementById("sample6_address").value = addr;
-									                // 커서를 상세주소 필드로 이동한다.
-									                document.getElementById("sample6_detailAddress").focus();
-									            }
-									        }).open();
-									    }
-									</script>
-									</label>
-									<!--이메일-->
 
 
-									<br>
-									<br>
+
+
+									<br> <br>
 									<p>
 										<input type="submit" value="Create Acoout" class="log_btn">
 
@@ -214,7 +149,7 @@
 
 
 								<p class="find">
-									<span><a href="signin.jsp">로그인 페이지로 이동</a></span>
+									<span><a href="signin">로그인 페이지로 이동</a></span>
 								</p>
 							</div>
 							<div></div>
@@ -227,8 +162,8 @@
 		</div>
 	</header>
 
-<%@include file="/resources/includes/footer.jsp" %>
-	
+	<%@include file="../includes/unitfooter.jsp"%>
+
 	<!-- Bootstrap core JS-->
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
