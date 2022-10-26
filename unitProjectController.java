@@ -115,6 +115,12 @@ public class unitProjectController {
 		log.info("boarddeleteAction");
 		model.addAttribute(("boarddeleteAction"), service.getList());
 	}
+	
+	@GetMapping("/map")
+	public void map(Model model) {
+		log.info("map");
+		model.addAttribute(("map"), service.getList());
+	}
 
 
 //	
