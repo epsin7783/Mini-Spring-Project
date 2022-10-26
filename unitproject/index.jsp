@@ -93,7 +93,7 @@
         </header>
 
  
-        <!-- 세계시간-->
+ <!-- 세계시간-->
         
         <section class="page-section" id="globalTime">
         	<div class="container">
@@ -113,19 +113,19 @@
 					</tr>
 					<tr style="height: 100px;  font-weight: bold; background-color: white;">
 						<td>
-						<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/>
+						<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="short"/>
 						</td>
 						<td style="border: 0.5px solid  #64A19D;">
 							<fmt:setTimeZone value="Europe/Newyork" />
-							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/><br>
+							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="short"/><br>
 						</td>
 						<td style="border: 0.5px solid  #64A19D;">
 							<fmt:setTimeZone value="America/Los_Angeles" />
-							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/><br>
+							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="short"/><br>
 						</td>
 						<td>
 							<fmt:setTimeZone value="Europe/London" />
-							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/><br>
+							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="short"/><br>
 						</td>
 					</tr>
 
@@ -138,31 +138,30 @@
 					<tr style="height: 100px;  font-weight: bold; background-color: white;">
 						<td style="border-bottom-left-radius: 10px;">
 							<fmt:setTimeZone value="Asia/Tokyo" />
-							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/>
+							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="short"/>
 						</td>
 						<td style="border-left: 1px solid  #64A19D;">
 							<fmt:setTimeZone value="Asia/Shanghai" />
-							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/>
+							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="short"/>
 						</td>
 						<td style="border-left: 1px solid  #64A19D;">
 							<fmt:setTimeZone value="Europe/Rome" />
-							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/>
+							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="short"/>
 						</td>
 						<td style="border-left: 1px solid  #64A19D; border-bottom-right-radius: 10px;">
 							<fmt:setTimeZone value="Europe/Paris" />
-							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/>
+							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="short"/>
 						</td>
 					</tr>
 				</table>
 			</div>
 
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<div class="line_box holder" style="width: 65%;  margin-right: auto; margin-left: auto;">
-				<hr style="border-top-width:3px; border-color:rgba(0, 0, 0, 0.05);" />	
-			</div>
-		</section>
-
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<div class="line_box holder" style="width: 65%;  margin-right: auto; margin-left: auto;">
+			<hr style="border-top-width:3px; border-color:rgba(0, 0, 0, 0.05);" />	
+		</div>
+	</section>
         
         
         
