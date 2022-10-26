@@ -62,6 +62,12 @@ public class unitProjectController {
 		model.addAttribute(("weather"), service.getList());
 	}
 	
+	@GetMapping("/write")
+	public void write(Model model) {
+		log.info("write");
+		model.addAttribute(("write"), service.getList());
+	}
+	
 	@PostMapping("/signinAction")
 	public void signinAction(Model model) {
 		log.info("signinAction");
@@ -80,7 +86,36 @@ public class unitProjectController {
 		model.addAttribute(("logoutAction"), service.getList());
 	}
 	
+	@PostMapping("/writeAction")
+	public void writeAction(Model model) {
+		log.info("writeAction");
+		model.addAttribute(("writeAction"), service.getList());
+	}
 	
+	@GetMapping("/boardview")
+	public void boardview(Model model) {
+		log.info("boardview");
+		model.addAttribute(("boardview"), service.getList());
+	}
+	
+	@GetMapping("/boardupdate")
+	public void boardupdate(Model model) {
+		log.info("boardupdate");
+		model.addAttribute(("boardupdate"), service.getList());
+	}
+	
+	@PostMapping("/boardupdateAction")
+	public void boardupdateAction(Model model) {
+		log.info("boardupdateAction");
+		model.addAttribute(("boardupdateAction"), service.getList());
+	}
+	
+	@GetMapping("/boarddeleteAction")
+	public void boarddeleteAction(Model model) {
+		log.info("boarddeleteAction");
+		model.addAttribute(("boarddeleteAction"), service.getList());
+	}
+
 
 //	
 //	@PostMapping("/register")
