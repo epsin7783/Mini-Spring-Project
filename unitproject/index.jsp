@@ -123,35 +123,123 @@
 							<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold;">상하이<br></td>
 							<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold;">로마<br></td>
 							<td style="border-left: 1px solid white; border-right: 1px solid #64A19D; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold;">파리<br></td>
-						</tr>
-						<tr style="height: 100px;  font-weight: bold;">
-							<td style="border: 1px solid  #64A19D; background-color: black; border-bottom-left-radius: 10px;">
-								<fmt:setTimeZone value="Asia/Tokyo" />
-								<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/>
-							</td>
-							<td style="border: 1px solid  #64A19D;">
-								<fmt:setTimeZone value="Asia/Shanghai" />
-								<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/>
-							</td>
-							<td style="border: 1px solid  #64A19D;">
-								<fmt:setTimeZone value="Europe/Rome" />
-								<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/>
-							</td>
-							<td style="border: 1px solid  #64A19D;">
-								<fmt:setTimeZone value="Europe/Paris" />
-								<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/>
-							</td>
-					
-					    </tr>
-	   				</table>
-   				</div>
-   				
-   				<p>&nbsp;</p>
-   				<p>&nbsp;</p>
-				<div class="line_box holder" style="width: 65%;  margin-right: auto; margin-left: auto;">
-					<hr style="border-top-width:3px; border-color:rgba(0, 0, 0, 0.05);" />	
-				</div>
+        <!-- 세계시간-->
+        
+        <section class="page-section" id="globalTime">
+        	<div class="container">
+        	    <div class="text-center">
+                    	<h2 class="section-heading text-uppercase" style="text-align: center;">세계 시간</h2>
+		    </div>
+		</div>
+		<p>&nbsp;</p>
+		<c:set var="now" value="<%= new java.util.Date() %>"/>
+			<div style="width: 1550px; height:350px; background-color: #cee0df; margin-left: auto; margin-right: auto; border-radius: 10px;"><br>
+				<table style="width:1500px; margin-left: auto; margin-right: auto; text-align: center;  ">
+					<tr style="height: 50px; background-color: white;">
+						<td style="background-color: #64A19D; color:white; font-size: 20px; font-weight: bold; border-top-left-radius: 10px;">대한민국<br></td>
+						<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold;">뉴욕<br></td>
+						<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold;">LA<br></td>
+						<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold; border-top-right-radius: 10px;">런던<br></td>
+					</tr>
+					<tr style="height: 100px;  font-weight: bold; background-color: white;">
+						<td>
+						<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/>
+						</td>
+						<td style="border: 0.5px solid  #64A19D;">
+							<fmt:setTimeZone value="Europe/Newyork" />
+							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/><br>
+						</td>
+						<td style="border: 0.5px solid  #64A19D;">
+							<fmt:setTimeZone value="America/Los_Angeles" />
+							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/><br>
+						</td>
+						<td>
+							<fmt:setTimeZone value="Europe/London" />
+							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/><br>
+						</td>
+					</tr>
+
+					<tr style="height: 50px;">
+						<td style="background-color: #64A19D; color:white; font-size: 20px; font-weight: bold;">도쿄<br></td>
+						<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold;">상하이<br></td>
+						<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold;">로마<br></td>
+						<td style="border-left: 1px solid white; border-right: 1px solid #64A19D; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold;">파리<br></td>
+					</tr>
+					<tr style="height: 100px;  font-weight: bold; background-color: white;">
+						<td style="border-bottom-left-radius: 10px;">
+							<fmt:setTimeZone value="Asia/Tokyo" />
+							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/>
+						</td>
+						<td style="border-left: 1px solid  #64A19D;">
+							<fmt:setTimeZone value="Asia/Shanghai" />
+							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/>
+						</td>
+						<td style="border-left: 1px solid  #64A19D;">
+							<fmt:setTimeZone value="Europe/Rome" />
+							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/>
+						</td>
+						<td style="border-left: 1px solid  #64A19D; border-bottom-right-radius: 10px;">
+							<fmt:setTimeZone value="Europe/Paris" />
+							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<div class="line_box holder" style="width: 65%;  margin-right: auto; margin-left: auto;">
+				<hr style="border-top-width:3px; border-color:rgba(0, 0, 0, 0.05);" />	
+			</div>
 		</section>
+
+        
+        
+        
+        <!-- Services-->
+
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Services</h2>
+                    <h3 class="section-subheading text-muted">비트트립은 여행을 계획하시는 분들에게 언제나 열려있습니다.</h3>
+                </div>
+
+                <div class="row text-center">
+                	<div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-globe-asia fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3"> 전세계 여행</h4>
+                        <p class="text-muted">전세계 여행하시고 싶은 나라를 검색해보세요!</p>
+                    </div>	
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-umbrella-beach fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3"> 고객 맞춤형 휴양지</h4>
+                        <p class="text-muted">찾으시는 휴양지를 검색하시고 여행 계획을 세우세요! </p>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-hotel fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">숙소 검색</h4>
+                        <p class="text-muted">원하시는 여행지 주변의 숙소를 검색해 보세요</p>
+                    </div>
+                </div>
+            </div>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<div class="line_box holder" style="width: 65%;  margin-right: auto; margin-left: auto;">
+		<hr style="border-top-width:3px; border-color:rgba(0, 0, 0, 0.05);" />	
+	</div>
+            
+        </section>
 
 	   
 	   
