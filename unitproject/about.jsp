@@ -42,6 +42,7 @@
                     
                         <li class="nav-item"><a class="nav-link" href="about">여행정보(코로나)</a></li>
                         <li class="nav-item"><a class="nav-link" href="hotel">호텔</a></li>
+                        <li class="nav-item"><a class="nav-link" href="map">지도</a></li>
                         <li class="nav-item"><a class="nav-link" href="board">게시판</a></li>
                         <li class="nav-item"><a class="nav-link" href="weather">날씨</a></li>
                         <li class="nav-item"><a class="nav-link" href="signin">로그인</a></li>
@@ -52,6 +53,7 @@
                     
                         <li class="nav-item"><a class="nav-link" href="about">여행정보(코로나)</a></li>
                         <li class="nav-item"><a class="nav-link" href="hotel">호텔</a></li>
+                        <li class="nav-item"><a class="nav-link" href="map">지도</a></li>
                         <li class="nav-item"><a class="nav-link" href="board">게시판</a></li>
                         <li class="nav-item"><a class="nav-link" href="weather">날씨</a></li>
                         <li class="nav-item"><a class="nav-link" href="#"><%=userID %>님 환영합니다!</a></li>
@@ -83,8 +85,10 @@
         	<div><p style="text-align: center;">
 				<span style="font-size: 36px;"><strong>여행경보단계</strong></span><span style="font-size: 18px;"><strong>&nbsp;</strong></span></p>
 			</div>
-        	<div style="width: 60%;  margin-right: auto; margin-left: auto;">
+        	<div style="width: 46%; margin-right: auto; margin-left: auto;">
         		<img src="../resources/assets/img/TravelWarning.jpg" alt="여행경보 단계" />
+        	</div>
+        	<div style="width: 38%; margin-right: auto; margin-left: auto;">
         		<h5>※ 더 자세한 사항을 확인하시고 싶으신 분은 <a href="https://www.0404.go.kr/walking/walking_intro.jsp" target="blank"><span style="text-decoration: underline;">외교부 홈페이지</span></a>를 참고하세요.</h5>
         	</div>
         	<br>
