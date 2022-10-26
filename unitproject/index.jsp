@@ -1,6 +1,11 @@
 <%@ page language="java" contentType="text/html;charset=utf-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.PrintWriter" %>
+<%@ page import="java.util.TimeZone" %>
+<%@ page import="java.text.DateFormat" %>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.util.Date" %>
+
 <!DOCTYPE html>
 <%@ page contentType = "text/html;charset=utf-8" %>
 <html lang="en">
@@ -9,6 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
+        <META HTTP-EQUIV="refresh" CONTENT="1"> <!-- 자동 새로고침 현재 1초로 설정해 놓음 -->
         <title>BITTRIP</title>
         <link rel="icon" type="image/x-icon" href="../resources/assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -81,7 +87,48 @@
             </div>
         </header>
 
-
+ <!-- 세계시간-->
+        
+        <section class="page-section" id="globalTime">
+        	<div class="container">
+        	    <div class="text-center">
+                    <h2 class="section-heading text-uppercase" style="text-align: center;">세계 시간</h2>
+				</div>
+			</div>
+        	<p>&nbsp;</p>
+			<c:set var="now" value="<%= new java.util.Date() %>"/>
+				<div style="width: 1550px; height:350px; background-color: black; margin-left: auto; margin-right: auto; border-radius: 10px;"><br>
+					<table style="width:1500px; margin-left: auto; margin-right: auto; text-align: center;  ">
+						<tr style="height: 50px;">
+							<td style="border:1px solid black; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold; border-top-left-radius: 10px;">대한민국<br></td>
+							<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold;">뉴욕<br></td>
+							<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold;">LA<br></td>
+							<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold; border-top-right-radius: 10px;">런던<br></td>
+						</tr>
+						<tr style="height: 100px;  font-weight: bold;">
+							<td style="border: 0.5px solid  #64A19D;">
+							<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/>
+							</td>
+							<td style="border: 0.5px solid  #64A19D;">
+								<fmt:setTimeZone value="Europe/Newyork" />
+								<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/><br>
+							</td>
+							<td style="border: 0.5px solid  #64A19D;">
+								<fmt:setTimeZone value="America/Los_Angeles" />
+								<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/><br>
+							</td>
+							<td style="border: 0.5px solid  #64A19D;">
+								<fmt:setTimeZone value="Europe/London" />
+								<fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="medium"/><br>
+							</td>
+					
+					    </tr>
+					    
+					    <tr style="height: 50px;">
+							<td style="background-color: #64A19D; color:white; font-size: 20px; font-weight: bold;">도쿄<br></td>
+							<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold;">상하이<br></td>
+							<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold;">로마<br></td>
+							<td style="border-left: 1px solid white; border-right: 1px solid #64A19D; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold;">파리<br></td>
         <!-- 세계시간-->
         
         <section class="page-section" id="globalTime">
