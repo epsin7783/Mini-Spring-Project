@@ -202,7 +202,7 @@
             });
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBabGozq0xV_i6109ZR5lKK_NmbFAFdVtM&libraries=places&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=(인증키 )&libraries=places&callback=initMap"
         defer></script>
 
         
