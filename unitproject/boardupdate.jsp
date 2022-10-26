@@ -82,6 +82,7 @@
 
 					<li class="nav-item"><a class="nav-link" href="about">여행정보(코로나)</a></li>
 					<li class="nav-item"><a class="nav-link" href="hotel">호텔</a></li>
+					<li class="nav-item"><a class="nav-link" href="map">지도</a></li>
 					<li class="nav-item"><a class="nav-link" href="board">게시판</a></li>
 					<li class="nav-item"><a class="nav-link" href="weather">날씨</a></li>
 					<li class="nav-item"><a class="nav-link" href="#"><%=userID%>님
