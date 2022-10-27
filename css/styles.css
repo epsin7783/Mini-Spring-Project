@@ -13275,3 +13275,64 @@ a{
 
 	
 /*   여행가능지역 table    */
+
+
+
+/* board css */
+#scroll{
+  top: 40%;
+  font-size: 30px;
+  color: #fff;
+}
+
+.boardtable{
+  border: 1px #a39485 solid;
+  font-size: .9em;
+  box-shadow: 0 2px 5px rgba(0,0,0,.25);
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.boardtabletr th{
+  text-align: center;
+  padding: 1em .5em;
+  vertical-align: middle;
+}
+.boardtable thead{
+  font-weight: bold;
+  color: #fff;
+  background-color: #64A19D;
+}
+.boardtabletr td{
+  text-align: center;
+  padding: 1em .5em;
+  vertical-align: middle;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  background: #fff;
+}
+.boardtabletr:first-child .boardtableth:first-child{
+  border-top-left-radius: 6px;
+}
+.boardtabletr:first-child .boardtableth:last-child{
+  border-top-left-radius: 6px;
+}
+.boardtabletr:last-child .boardtabletd:first-child {
+  border-bottom-left-radius: 6px;
+}
+.boardtabletr:last-child .boardtabletd:last-child {
+  border-bottom-right-radius: 6px;
+}
+.boarda{
+  float: right;
+}
+.boardtable a:hover{
+  text-decoration: underline;
+  color: yellowgreen;
+}
+
+.boardview{
+  float: right;
+}
+
+/* board css */
