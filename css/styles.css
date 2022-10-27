@@ -12047,7 +12047,7 @@ a{
 		margin-left: auto; 
 		margin-right: auto; 
 		background-color: white; 
-		border-top: 1px solid #000000;
+		border-top: 5px solid #4d90fe;
 		border-bottom-left-radius: 10px;
 		border-bottom-right-radius: 10px;
 	  
@@ -12134,6 +12134,7 @@ a{
 
 /*   map 주소주소    */
 
+
 /* 배경 영상 css*/
 #myvideo{
   position: absolute;
@@ -12157,3 +12158,1120 @@ a{
 
 }
 /* 배경 영상 css*/
+
+
+
+
+
+/*   여행가능지역 table    */
+
+	#td_one {
+	width: 150px; 
+	height: 50px;
+	padding: 10px;
+	color: white;
+	font-size:16pt;
+	font-weight:bold;
+	text-align: center; 
+	border-top-left-radius: 10px;
+	background-color: #64A19D; 
+	}
+	
+	#td_two {
+	width: 150px; 
+	height: 50px;
+	padding: 10px;
+	color: white;
+	font-size:16pt;
+	font-weight:bold;
+	text-align: center;
+	background-color: #64A19D; 
+	}
+	
+	#td_three {
+	width: 400px;
+	height: 50px;
+	padding: 10px;
+	color: white;
+	font-size:16pt;
+	font-weight:bold;
+	text-align: center; 
+	background-color: #64A19D; 
+	
+	}
+	
+	#td_four {
+	width: 600px; 
+	height: 50px;
+	padding: 10px;
+	color: white;
+	font-weight:bold;
+	font-size:16pt;
+	text-align: center; 	
+	border-top-right-radius: 10px;
+	background-color: #64A19D; 
+	}
+	
+	
+	#td_lon_one {
+	width: 150px; 
+	height : 150px;	
+	padding-top: 55px;
+	text-align:center;
+	background-color: #ffffff;
+	}
+	
+	#td_lon_two {
+	width: 400px; 
+	height : 150px;
+	padding-top: 25px;
+	padding-left: 5px;
+
+	background-color: #ffffff;
+	}
+	
+	#td_lon_three {
+	width: 600px; 
+	height : 150px;	
+	padding-top: 20px;
+	padding-left: 5px;
+
+	background-color: #ffffff;
+	}
+	
+	#td_fra_one {
+	width: 150px; 
+	height : 170px;	
+	padding-top: 55px;
+	text-align:center;
+	background-color: #ffffff;
+	}
+	
+	#td_fra_two {
+	width: 400px; 
+	height : 170px;
+	padding-top: 25px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_fra_three {
+	width: 600px; 
+	height : 170px;	
+	padding-top: 10px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+		
+	#td_ger_one {
+	width: 150px; 
+	height : 250px;	
+	padding-top: 60%;
+	text-align:center;
+	background-color: #ffffff;
+	}
+	
+	#td_ger_two {
+	width: 400px; 
+	height : 250px;
+	padding-top: 35px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_ger_three {
+	width: 600px; 
+	height : 250px;	
+	padding-top: 12%;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+			
+	#td_ity_one {
+	width: 150px; 
+	height : 250px;	
+	padding-top: 60%;
+	text-align:center;
+	background-color: #ffffff;
+	}
+	
+	#td_ity_two {
+	width: 400px; 
+	height : 250px;
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_ity_three {
+	width: 600px; 
+	height : 250px;	
+	padding-top: 7%;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+				
+	#td_spa_one {
+	width: 150px; 
+	height : 250px;	
+	padding-top: 60%;
+	text-align:center;
+	background-color: #ffffff;
+	}
+	
+	#td_spa_two {
+	width: 400px; 
+	height : 250px;
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_spa_three {
+	width: 600px; 
+	height : 250px;	
+	padding-top: 1%;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+					
+	#td_hol_one {
+	width: 150px; 
+	height : 200px;	
+	padding-top: 40px;
+	text-align:center;
+	background-color: #ffffff;
+	}
+	
+	#td_hol_two {
+	width: 400px; 
+	height : 200px;
+	padding-top: 20px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_hol_three {
+	width: 600px; 
+	height : 200px;	
+	padding-top: 20px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	border-bottom-right-radius: 10px;
+	}
+	
+					
+	#td_trk_one {
+	width: 150px; 
+	height : 150px;	
+	padding-top: 60px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_trk_two {
+	width: 400px; 
+	height : 150px;
+	padding-top: 20px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_trk_three {
+	width: 600px; 
+	height : 150px;	
+	padding-top: 10px;
+	padding-left: 5px;
+	background-color: white;
+	}	
+	
+	#td_gre_one {
+	width: 150px; 
+	height : 130px;	
+	padding-top: 45px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_gre_two {
+	width: 400px; 
+	height : 130px;
+	padding-top: 30px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_gre_three {
+	width: 600px; 
+	height : 130px;	
+	padding-top: 20px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_eyt_one {
+	width: 150px; 
+	height : 130px;	
+	padding-top: 45px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_eyt_two {
+	width: 400px; 
+	height : 130px;
+	padding-top: 30px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_eyt_three {
+	width: 600px; 
+	height : 130px;	
+	padding-top: 20px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_esl_one {
+	width: 150px; 
+	height : 100px;	
+	padding-top: 40px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_esl_two {
+	width: 400px; 
+	height : 100px;
+	padding-top: 20px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_esl_three {
+	width: 600px; 
+	height : 100px;	
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+		
+	#td_dby_one {
+	width: 150px; 
+	height : 180px;	
+	padding-top: 55px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_dby_two {
+	width: 400px; 
+	height : 180px;
+	padding-top: 10px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_dby_three {
+	width: 600px; 
+	height : 180px;	
+	padding-top: 50px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_kar_one {
+	width: 150px; 
+	height : 80px;	
+	padding-top: 40px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_kar_two {
+	width: 400px; 
+	height : 80px;
+	padding-top: 20px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_kar_three {
+	width: 600px; 
+	height : 80px;	
+	padding-top: 20px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_jor_one {
+	width: 150px; 
+	height : 100px;	
+	padding-top: 40px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_jor_two {
+	width: 400px; 
+	height : 100px;
+	padding-top: 30px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_jor_three {
+	width: 600px; 
+	height : 100px;	
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: white;
+	border-bottom-right-radius: 10px;
+	
+	}
+	
+	
+	#td_chk_one {
+	width: 150px; 
+	height : 150px;	
+	padding-top: 60px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_chk_two {
+	width: 400px; 
+	height : 150px;
+	padding-top: 45px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_chk_three {
+	width: 600px; 
+	height : 150px;	
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_ost_one {
+	width: 150px; 
+	height : 130px;	
+	padding-top: 45px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_ost_two {
+	width: 400px; 
+	height : 130px;
+	padding-top: 35px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_ost_three {
+	width: 600px; 
+	height : 130px;	
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_hug_one {
+	width: 150px; 
+	height : 100px;	
+	padding-top: 35px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_hug_two {
+	width: 400px; 
+	height : 100px;
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_hug_three {
+	width: 600px; 
+	height : 100px;	
+	padding-top: 30px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_pol_one {
+	width: 150px; 
+	height : 80px;	
+	padding-top: 20px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_pol_two {
+	width: 400px; 
+	height : 80px;
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_pol_three {
+	width: 600px; 
+	height : 80px;	
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_cro_one {
+	width: 150px; 
+	height : 100px;	
+	padding-top: 40px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_cro_two {
+	width: 400px; 
+	height : 100px;
+	padding-top: 25px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_cro_three {
+	width: 600px; 
+	height : 100px;	
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_rum_one {
+	width: 150px; 
+	height : 80px;	
+	padding-top: 25px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_rum_two {
+	width: 400px; 
+	height : 552px;
+	padding-top: 20px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_rum_three {
+	width: 600px; 
+	height : 80px;	
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: white;
+	}
+
+
+	#td_bos_one {
+	width: 150px; 
+	height : 80px;	
+	padding-top: 15px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	
+	#td_bos_three {
+	width: 600px; 
+	height : 80px;	
+	padding-top: 10px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_mon_one {
+	width: 150px; 
+	height : 80px;	
+	padding-top: 25px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	
+	#td_mon_three {
+	width: 600px; 
+	height : 80px;	
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_bul_one {
+	width: 150px; 
+	height : 80px;	
+	padding-top: 25px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	
+	#td_bul_three {
+	width: 600px; 
+	height : 80px;	
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_sev_one {
+	width: 150px; 
+	height : 80px;	
+	padding-top: 25px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	
+	#td_sev_three {
+	width: 600px; 
+	height : 80px;	
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_sel_one {
+	width: 150px; 
+	height : 80px;	
+	padding-top: 25px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	
+	#td_sel_three {
+	width: 600px; 
+	height : 80px;	
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_svb_one {
+	width: 150px; 
+	height : 60px;	
+	padding-top: 15px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_svb_three {
+	width: 600px; 
+	height : 60px;	
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: white;
+	border-bottom-right-radius: 10px;
+	}
+	
+	
+	
+	#td_rus_one {
+	width: 150px; 
+	height : 170px;	
+	padding-top: 70px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_rus_two {
+	width: 400px; 
+	height : 170px;
+	padding-top: 10px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_rus_three {
+	width: 600px; 
+	height : 170px;	
+	padding-top: 30px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_fin_one {
+	width: 150px; 
+	height : 140px;	
+	padding-top: 60px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_fin_two {
+	width: 400px; 
+	height : 140px;
+	padding-top: 10px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_fin_three {
+	width: 600px; 
+	height : 140px;	
+	padding-top: 50px;
+	padding-left: 5px;
+	background-color: white;
+	}	
+	
+	#td_den_one {
+	width: 150px; 
+	height : 100px;	
+	padding-top: 40px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_den_two {
+	width: 400px; 
+	height : 100px;
+	padding-top: 40px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_den_three {
+	width: 600px; 
+	height : 100px;	
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: white;
+	}	
+	
+	#td_nrw_one {
+	width: 150px; 
+	height : 100px;	
+	padding-top: 40px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_nrw_two {
+	width: 400px; 
+	height : 100px;
+	padding-top: 40px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_nrw_three {
+	width: 600px; 
+	height : 100px;	
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: white;
+	}	
+	
+	#td_swd_one {
+	width: 150px; 
+	height : 100px;	
+	padding-top: 40px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_swd_two {
+	width: 400px; 
+	height : 100px;
+	padding-top: 40px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_swd_three {
+	width: 600px; 
+	height : 100px;	
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: white;
+	}	
+	
+	#td_thr_one {
+	width: 150px; 
+	height : 60px;	
+	padding-top: 20px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_thr_two {
+	width: 400px; 
+	height : 60px;
+	padding-top: 20px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_thr_three {
+	width: 600px; 
+	height : 60px;	
+	padding-top: 20px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_icl_one {
+	width: 150px; 
+	height : 60px;	
+	padding-top: 20px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_icl_two {
+	width: 400px; 
+	height : 60px;
+	padding-top: 20px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_icl_three {
+	width: 600px; 
+	height : 60px;	
+	padding-top: 20px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_cort_one {
+	width: 150px; 
+	height : 100px;	
+	padding-top: 40px;
+	text-align:center;
+	background-color: white;
+	}
+	
+	#td_cort_two {
+	width: 400px; 
+	height : 100px;
+	padding-top: 40px;
+	padding-left: 5px;
+	background-color: white;
+	}
+	
+	#td_cort_three {
+	width: 600px; 
+	height : 100px;	
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: white;
+	border-bottom-right-radius: 10px;
+	
+	}
+	
+	#td_usa_one {
+	width: 150px; 
+	height : 300px;	
+	padding-top: 120px;
+	text-align:center;
+	background-color: #ffffff;
+	}
+	
+	#td_usa_two {
+	width: 400px; 
+	height : 300px;
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_usa_three {
+	width: 600px; 
+	height : 300px;	
+	padding-top: 100px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_usa_one {
+	width: 150px; 
+	height : 300px;	
+	padding-top: 120px;
+	text-align:center;
+	background-color: #ffffff;
+	}
+	
+	#td_usa_two {
+	width: 400px; 
+	height : 300px;
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_usa_three {
+	width: 600px; 
+	height : 300px;	
+	padding-top: 100px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_cnd_one {
+	width: 150px; 
+	height : 150px;	
+	padding-top: 60px;
+	text-align:center;
+	background-color: #ffffff;
+	}
+	
+	#td_cnd_two {
+	width: 400px; 
+	height : 150px;
+	padding-top: 30px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_cnd_three {
+	width: 600px; 
+	height : 150px;	
+	padding-top: 10px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_gua_one {
+	width: 150px; 
+	height : 160px;	
+	padding-top: 60px;
+	text-align:center;
+	background-color: #ffffff;
+	}
+	
+	#td_gua_two {
+	width: 400px; 
+	height : 160px;
+	padding-top: 10px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_gua_three {
+	width: 600px; 
+	height : 160px;	
+	padding-top: 40px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_mex_one {
+	width: 150px; 
+	height : 100px;	
+	padding-top: 40px;
+	text-align:center;
+	background-color: #ffffff;
+	}
+	
+	#td_mex_two {
+	width: 400px; 
+	height : 100px;
+	padding-top: 40px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_mex_three {
+	width: 600px; 
+	height : 100px;	
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	border-bottom-right-radius: 10px;
+	}
+	
+	#td_twa_one {
+	width: 150px; 
+	height : 120px;	
+	padding-top: 40px;
+	text-align:center;
+	background-color: #ffffff;
+	}
+	
+	#td_twa_two {
+	width: 400px; 
+	height : 120px;
+	padding-top: 20px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_twa_three {
+	width: 600px; 
+	height : 120px;	
+	padding-top: 10px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_phi_one {
+	width: 150px; 
+	height : 80px;	
+	padding-top: 30px;
+	text-align:center;
+	background-color: #ffffff;
+	}
+	
+	#td_phi_two {
+	width: 400px; 
+	height : 80px;
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_phi_three {
+	width: 600px; 
+	height : 80px;	
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_cam_one {
+	width: 150px; 
+	height : 80px;	
+	padding-top: 30px;
+	text-align:center;
+	background-color: #ffffff;
+	}
+	
+	#td_cam_two {
+	width: 400px; 
+	height : 80px;
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_cam_three {
+	width: 600px; 
+	height : 80px;	
+	padding-top: 10px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_mal_one {
+	width: 150px; 
+	height : 100px;	
+	padding-top: 35px;
+	text-align:center;
+	background-color: #ffffff;
+	}
+	
+	#td_mal_two {
+	width: 400px; 
+	height : 100px;
+	padding-top: 25px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_mal_three {
+	width: 600px; 
+	height : 100px;	
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_shi_one {
+	width: 150px; 
+	height : 80px;	
+	padding-top: 30px;
+	text-align:center;
+	background-color: #ffffff;
+	}
+	
+	#td_shi_two {
+	width: 400px; 
+	height : 80px;
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_shi_three {
+	width: 600px; 
+	height : 80px;	
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_vtn_one {
+	width: 150px; 
+	height : 160px;	
+	padding-top: 60px;
+	text-align:center;
+	background-color: #ffffff;
+	}
+	
+	#td_vtn_two {
+	width: 400px; 
+	height : 160px;
+	padding-top: 10px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_vtn_three {
+	width: 600px; 
+	height : 160px;	
+	padding-top: 40px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_idn_one {
+	width: 150px; 
+	height : 100px;	
+	padding-top: 40px;
+	text-align:center;
+	background-color: #ffffff;
+	}
+	
+	#td_idn_two {
+	width: 400px; 
+	height : 100px;
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	}
+	
+	#td_idn_three {
+	width: 600px; 
+	height : 100px;	
+	padding-top: 15px;
+	padding-left: 5px;
+	background-color: #ffffff;
+	border-bottom-right-radius: 10px;
+	}
+	
+	
+	
+
+	
+/*   여행가능지역 table    */
