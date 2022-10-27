@@ -99,7 +99,7 @@
 
  
         <!-- 세계시간-->
-        
+	      
         <section class="page-section" id="globalTime">
         	<div class="container">
         	    <div class="text-center">
@@ -111,10 +111,10 @@
 			<div style="width: 1550px; height:350px; background-color: #cee0df; margin-left: auto; margin-right: auto; border-radius: 10px;"><br>
 				<table style="width:1500px; margin-left: auto; margin-right: auto; text-align: center;  ">
 					<tr style="height: 50px; background-color: white;">
-						<td style="background-color: #64A19D; color:white; font-size: 20px; font-weight: bold; border-top-left-radius: 10px;">대한민국<br></td>
-						<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold;">뉴욕<br></td>
-						<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold;">LA<br></td>
-						<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold; border-top-right-radius: 10px;">런던<br></td>
+						<td style="background-color: #64A19D; color:white; font-size: 21px; font-weight: bold; border-top-left-radius: 10px;"><span><img src="../resources/assets/img/koreanflag.svg" style="width: 38px; height: 24px;" alt="한국" />&nbsp;&nbsp;</span>대한민국<br></td>
+						<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 21px; font-weight: bold;"><span><img src="../resources/assets/img/USA.jpg" style="width: 38px; height: 24px;" alt="미국" />&nbsp;&nbsp;</span>뉴욕<br></td>
+						<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 21px; font-weight: bold;"><span><img src="../resources/assets/img/USA.jpg" style="width: 38px; height: 24px;" alt="미국" />&nbsp;&nbsp;</span>LA<br></td>
+						<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 21px; font-weight: bold; border-top-right-radius: 10px;"><span><img src="../resources/assets/img/UK.jpg" style="width: 38px; height: 24px;" alt="영국" />&nbsp;&nbsp;</span>런던<br></td>
 					</tr>
 					<tr style="height: 100px;  font-weight: bold; background-color: white;">
 						<td>
@@ -135,10 +135,10 @@
 					</tr>
 
 					<tr style="height: 50px;">
-						<td style="background-color: #64A19D; color:white; font-size: 20px; font-weight: bold;">도쿄<br></td>
-						<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold;">상하이<br></td>
-						<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold;">로마<br></td>
-						<td style="border-left: 1px solid white; border-right: 1px solid #64A19D; background-color: #64A19D; color:white; font-size: 20px; font-weight: bold;">파리<br></td>
+						<td style="background-color: #64A19D; color:white; font-size: 21px; font-weight: bold;"><span><img src="../resources/assets/img/japan.jpg" style="width: 38px; height: 24px;" alt="일본" />&nbsp;&nbsp;</span>도쿄<br></td>
+						<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 21px; font-weight: bold;"><span><img src="../resources/assets/img/china.jpg" style="width: 38px; height: 24px;" alt="중국" />&nbsp;&nbsp;</span>상하이<br></td>
+						<td style="border-left: 1px solid white; background-color: #64A19D; color:white; font-size: 21px; font-weight: bold;"><span><img src="../resources/assets/img/iItaly.jpg" style="width: 38px; height: 24px;" alt="아털라어" />&nbsp;&nbsp;</span>로마<br></td>
+						<td style="border-left: 1px solid white; border-right: 1px solid #64A19D; background-color: #64A19D; color:white; font-size: 21px; font-weight: bold;"><span><img src="../resources/assets/img/france.jpg" style="width: 38px; height: 24px;" alt="프랑스" />&nbsp;&nbsp;</span>파리<br></td>
 					</tr>
 					<tr style="height: 100px;  font-weight: bold; background-color: white;">
 						<td style="border-bottom-left-radius: 10px;">
@@ -166,10 +166,7 @@
 			<div class="line_box holder" style="width: 65%;  margin-right: auto; margin-left: auto;">
 				<hr style="border-top-width:3px; border-color:rgba(0, 0, 0, 0.05);" />	
 			</div>
-		</section>
-
-        
-        
+		</section>     
         
         <!-- Services-->
 
