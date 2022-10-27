@@ -7,6 +7,13 @@ public class bod {
 	private String bodDate;
 	private String bodContent;
 	private int bodAvailable;
+	private int bodCount;
+	public int getBodCount() {
+		return bodCount;
+	}
+	public void setBodCount(int bodCount) {
+		this.bodCount = bodCount;
+	}
 	public int getBodID() {
 		return bodID;
 	}
