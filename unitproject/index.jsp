@@ -80,17 +80,24 @@
         </nav>
         
          
-        <!-- Masthead-->
+      
+       <!-- Masthead-->
         <header class="masthead">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
+                <div class="section" id="section0">
+                	<video id="myvideo" autoplay muted loop>
+                		<source src="../resources/assets/img/backvideo.mp4">
+                	</video>
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">BITTRIP</h1>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">비트트립에 오신것을 환영합니다.</h2>
                     </div>
                 </div>
+                </div>
             </div>
         </header>
+
 
  
  <!-- 세계시간-->
