@@ -87,7 +87,7 @@
                 <div class="d-flex justify-content-center">
                 <div class="section" id="section0">
                 	<video id="myvideo" autoplay muted loop>
-                		<source src="../resources/assets/img/backvideo.mp4">
+                		<source src="../resources/assets/img/indexvideo.mp4">
                 	</video>
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">BITTRIP</h1>
