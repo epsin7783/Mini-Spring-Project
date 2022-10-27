@@ -12242,7 +12242,7 @@ a{
 	#td_fra_one {
 	width: 150px; 
 	height : 170px;	
-	padding-top: 55px;
+	padding-top: 60px;
 	text-align:center;
 	background-color: #ffffff;
 	}
@@ -12267,7 +12267,7 @@ a{
 	#td_ger_one {
 	width: 150px; 
 	height : 250px;	
-	padding-top: 60%;
+	padding-top: 100px;
 	text-align:center;
 	background-color: #ffffff;
 	}
@@ -12292,7 +12292,7 @@ a{
 	#td_ity_one {
 	width: 150px; 
 	height : 250px;	
-	padding-top: 60%;
+	padding-top: 100px;
 	text-align:center;
 	background-color: #ffffff;
 	}
@@ -12604,7 +12604,7 @@ a{
 	#td_hug_three {
 	width: 600px; 
 	height : 100px;	
-	padding-top: 30px;
+	padding-top: 40px;
 	padding-left: 5px;
 	background-color: white;
 	}
@@ -12908,7 +12908,7 @@ a{
 	
 	#td_thr_one {
 	width: 150px; 
-	height : 60px;	
+	height : 120px;	
 	padding-top: 20px;
 	text-align:center;
 	background-color: white;
@@ -12916,16 +12916,16 @@ a{
 	
 	#td_thr_two {
 	width: 400px; 
-	height : 60px;
-	padding-top: 20px;
+	height : 120px;
+	padding-top: 45px;
 	padding-left: 5px;
 	background-color: white;
 	}
 	
 	#td_thr_three {
 	width: 600px; 
-	height : 60px;	
-	padding-top: 20px;
+	height : 120px;	
+	padding-top: 45px;
 	padding-left: 5px;
 	background-color: white;
 	}
@@ -12957,7 +12957,7 @@ a{
 	#td_cort_one {
 	width: 150px; 
 	height : 100px;	
-	padding-top: 40px;
+	padding-top: 15px;
 	text-align:center;
 	background-color: white;
 	}
@@ -13271,8 +13271,6 @@ a{
 	}
 	
 	
-	
-
 	
 /*   여행가능지역 table    */
 
