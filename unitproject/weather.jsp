@@ -15,8 +15,18 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../resources/css/styles.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        
     </head>
     <body id="page-top">
+        <!-- Navigation-->
+ 		<% 
+        String userID = null;
+    	if (session.getAttribute("userID") != null){
+            userID = (String) session.getAttribute("userID");
+    	}
+		%>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
@@ -25,31 +35,51 @@
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
+                
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
+                	<ul class="navbar-nav ms-auto">
+                <%
+                	if(userID == null){
+                %>
                         <li class="nav-item"><a class="nav-link" href="about">여행정보(코로나)</a></li>
                         <li class="nav-item"><a class="nav-link" href="hotel">호텔</a></li>
                         <li class="nav-item"><a class="nav-link" href="map">지도</a></li>
                         <li class="nav-item"><a class="nav-link" href="board">게시판</a></li>
                         <li class="nav-item"><a class="nav-link" href="weather">날씨</a></li>
                         <li class="nav-item"><a class="nav-link" href="signin">로그인</a></li>
-                    </ul>
+                    <%
+                	}else{
+                    %>
+                        <li class="nav-item"><a class="nav-link" href="about">여행정보(코로나)</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hotel">호텔</a></li>
+                        <li class="nav-item"><a class="nav-link" href="map">지도</a></li>
+                        <li class="nav-item"><a class="nav-link" href="board">게시판</a></li>
+                        <li class="nav-item"><a class="nav-link" href="weather">날씨</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><%=userID %>님 환영합니다!</a></li>
+                        <li class="nav-item"><a class="nav-link" href="logoutAction">로그아웃</a></li>
+                    <% 
+                	}
+                    %>
+                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
         <header class="masthead">
+            <div id="여백"><p>&nbsp;</p></div>
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
-                    <div class="text-center" style="background-color:white">
-                        <iframe src="https://www.weather.go.kr/w/theme/world-weather.do" width="1100px" height="800px" frameborder="1" scrolling="yes"></iframe>
+                	<div style="background-color:#0098e0; width:1420px; height:820px; padding-top: 10px; padding-left: 10px; border-radius: 10px;">
+	                    <div class="text-center" style="background-color:white; width:1400px; height:800px; border-radius: 10px;">
+	                        <iframe src="https://www.weather.go.kr/w/theme/world-weather.do" width="1400px" height="800px" border-radius="10px" frameborder="1" scrolling="yes"></iframe>
+	                    </div>
                     </div>
                 </div>
             </div>
         </header>
 
-<%@include file="/resources/includes/footer.jsp" %>
-        
+<%@include file="../includes/unitfooter.jsp" %>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
@@ -59,6 +89,6 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-        
+
     </body>
 </html>
