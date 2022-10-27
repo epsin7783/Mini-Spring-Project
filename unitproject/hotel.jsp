@@ -40,7 +40,7 @@
                     
                         <li class="nav-item"><a class="nav-link" href="about">여행정보(코로나)</a></li>
                         <li class="nav-item"><a class="nav-link" href="hotel">호텔</a></li>
-			<li class="nav-item"><a class="nav-link" href="map">지도</a></li>
+                        <li class="nav-item"><a class="nav-link" href="map">지도</a></li>
                         <li class="nav-item"><a class="nav-link" href="board">게시판</a></li>
                         <li class="nav-item"><a class="nav-link" href="weather">날씨</a></li>
                         <li class="nav-item"><a class="nav-link" href="signin">로그인</a></li>
@@ -51,7 +51,7 @@
                     
                         <li class="nav-item"><a class="nav-link" href="about">여행정보(코로나)</a></li>
                         <li class="nav-item"><a class="nav-link" href="hotel">호텔</a></li>
-			<li class="nav-item"><a class="nav-link" href="map">지도</a></li>
+                        <li class="nav-item"><a class="nav-link" href="map">지도</a></li>
                         <li class="nav-item"><a class="nav-link" href="board">게시판</a></li>
                         <li class="nav-item"><a class="nav-link" href="weather">날씨</a></li>
                         <li class="nav-item"><a class="nav-link" href="#"><%=userID %>님 환영합니다!</a></li>
@@ -68,15 +68,17 @@
         <header class="masthead">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
-                    <div class="text-center" style="background-color:white">
-                        <iframe src="https://url.kr/zb23re" width="1100px" height="800px" frameborder="1" scrolling="yes"></iframe>
+                	<div style="background-color:#0098e0; width:1420px; height:820px; padding-top: 10px; padding-left: 10px; border-radius: 10px;">
+	                   <div class="text-center" style="background-color:white; width:1400px; height:800px;">
+	                       <iframe src="https://url.kr/zb23re" width="1400px" height="800px" border-radius="1rem" "1rem" frameborder="1" scrolling="yes"></iframe>
+	                   </div>
                     </div>
                 </div>
             </div>
         </header>
 
 <%@include file="../includes/unitfooter.jsp" %>
-        
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
@@ -86,5 +88,7 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        
+
     </body>
 </html>
