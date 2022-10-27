@@ -20,94 +20,9 @@
 		<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 80%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      #description {
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
-      }
-
-      #infowindow-content .title {
-        font-weight: bold;
-      }
-
-      #infowindow-content {
-        display: none;
-      }
-
-      #map #infowindow-content {
-        display: inline;
-      }
-
-      .pac-card {
-        margin: 10px 10px 0 0;
-        border-radius: 2px 0 0 2px;
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        outline: none;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-        background-color: #fff;
-        font-family: Roboto;
-      }
-
-      #pac-container {
-        padding-bottom: 12px;
-        margin-right: 12px;
-      }
-
-      .pac-controls {
-        display: inline-block;
-        padding: 5px 11px;
-      }
-
-      .pac-controls label {
-        font-family: Roboto;
-        font-size: 13px;
-        font-weight: 300;
-      }
-
-      #pac-input {
-        background-color: #fff;
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
-        margin-left: 12px;
-        padding: 0 11px 0 13px;
-        text-overflow: ellipsis;
-        width: 400px;
-      }
-
-      #pac-input:focus {
-        border-color: #4d90fe;
-      }
-
-      #title {
-        color: #fff;
-        background-color: #4d90fe;
-        font-size: 25px;
-        font-weight: 500;
-        padding: 6px 12px;
-      }
-    </style>
    
     <script>
-      // This example requires the Places library. Include the libraries=places
-      // parameter when you first load the API. For example:
-      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
-      
-
+    
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 37.5546788, lng: 126.9706069},
@@ -202,7 +117,7 @@
             });
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=(인증키 )&libraries=places&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=(지도 코드코드코드코드)&libraries=places&callback=initMap"
         defer></script>
 
         
@@ -261,13 +176,15 @@
        <header class="masthead">
     	<div id="여백"><p>&nbsp;</p></div>
     	<div id="여백"><p>&nbsp;</p></div>
+    	<div id="여백"><p>&nbsp;</p></div>
     	
-    	<div class="text-center">
-	        <h1 class="mx-auto my-0 text-uppercase">지도 검색</h1>
-		</div>
-
+    	
+        <div class="text-center">
+            <h3 class="text-white-50 mx-auto mt-1 mb-2">지도 검색</h3>
+        </div>
+		<div style="padding-bottom: 20px;"></div>
 		<form id="frm" name="frm" action="mapWrite.jsp" method="post">
-		    <div class="pac-card" id="pac-card">
+		    <div class="pac-card" id="pac-card" style="border-radius: 10px;">
 		      <div>
 		        <div id="title">
 		          Autocomplete search
@@ -295,20 +212,23 @@
 		            placeholder="Enter a location">
 		      </div>
 		    </div>
-		    <div id="map" style="width: 1300px; height: 600px; margin-left: auto; margin-right: auto;"></div>
-		    <div id="infowindow-content">
-		      <img src="" width="16" height="16" id="place-icon">
-		      <span id="place-name"  class="title"></span><br>
-		      <span id="place-address"></span>
-		    </div>
-			
-			<div>	        
-			    <div style="width: 1300px; height: 150px; margin-left: auto; margin-right: auto; background-color: white; border: 3px solid black;">
-					&nbsp;&nbsp;장소 : <input type="text" id="place_name" name="place_name" value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					주소 : <input type="text" id="address" name="address" value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					위도 : <input type="text" id="latclick" name="latclick" value="" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					경도 : <input type="text" id="lngclick" name="lngclick" value="">	
-			    </div>
+		    <div style="width: 1315px; height: 692px; background-color:#4d90fe; padding-top: 5px; border-radius: 10px; margin-left: auto; margin-right: auto;">
+				    <div id="map" style="width: 1300px; height: 600px; margin-left: auto; margin-right: auto; border-top-left-radius: 10px; border-top-right-radius: 10px;"></div>
+					    <div id="infowindow-content">
+					      <img src="" width="16" height="16" id="place-icon">
+					      <span id="place-name"  class="title"></span><br>
+					      <span id="place-address"></span>
+					    </div>
+
+					<div>	        
+					    <div id="map_address">
+							&nbsp;&nbsp;
+							장소 : <input type="text" id="place_name" name="place_name" value="">&nbsp;&nbsp;
+							주소 : <input type="text" id="address" name="address" value="" style="width: 400px;">&nbsp;&nbsp;
+							위도 : <input type="text" id="latclick" name="latclick" value="" >&nbsp;&nbsp;
+							경도 : <input type="text" id="lngclick" name="lngclick" value="">	
+					    </div>
+			    	</div>
 		    </div>    
 		 </form>
 
@@ -318,8 +238,8 @@
 <!-- <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBabGozq0xV_i6109ZR5lKK_NmbFAFdVtM&callback=initMap" async></script> -->
 
 <%@include file="../includes/unitfooter.jsp" %>
-	    
-	<!-- Bootstrap core JS-->
+
+        <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="../resources/js/scripts.js"></script>
