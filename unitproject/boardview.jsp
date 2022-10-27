@@ -113,76 +113,87 @@
 						<div class="col-lg-12">
 							<h1 class="page-header">게시판</h1>
 						</div>
+						<div id="scroll">
+							<span> <i class="fa-sharp fa-solid fa-computer-mouse"></i><br>
+								<i class="fa-solid fa-arrow-down"></i>
+							</span>
+						</div>
 						<!-- /.col-lg-12 -->
 					</div>
 					<!-- /.row -->
-					
+
 				</div>
 			</div>
 		</div>
 
 	</header>
-<section>
-	<div class="container">
-						<div class="row">
-							<table class="table table-striped"
-								style="text-align: center; border: 1px solid #dddddd">
-								<thead>
-									<tr>
-										<th colspan="3"
-											style="background-color: #eeeeee; text-align: center;">게시판
-											글 보기</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td style="width: 20%;">글 제목</td>
-										<td colspan="2"><%= bbs.getBodTitle().replaceAll(" ","&nbsp;").replaceAll("<","&lt;").replaceAll(">", "&gt;").replaceAll("\n","<br>") %></td>
-									</tr>
-									<tr>
-										<td>작성자</td>
-										<td colspan="2"><%= bbs.getUserID().replaceAll(" ","&nbsp;").replaceAll("<","&lt;").replaceAll(">", "&gt;").replaceAll("\n","<br>") %></td>
-									</tr>
-									<tr>
-										<td>작성일자</td>
-										<td colspan="2"><%= bbs.getBodDate().substring(0,11) + bbs.getBodDate().substring(11, 13) + "시" 
+	<section class="page-section">
+		<div class="container">
+			<div class="row">
+				<table class="boardtable">
+					<thead>
+						<tr class="boardtabletr">
+							<th colspan="3">게시판 글 보기</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="boardtabletr">
+							<td>글 제목</td>
+							<td colspan="2"><%= bbs.getBodTitle().replaceAll(" ","&nbsp;").replaceAll("<","&lt;").replaceAll(">", "&gt;").replaceAll("\n","<br>") %></td>
+						</tr>
+						<tr class="boardtabletr">
+							<td>작성자</td>
+							<td colspan="2"><%= bbs.getUserID().replaceAll(" ","&nbsp;").replaceAll("<","&lt;").replaceAll(">", "&gt;").replaceAll("\n","<br>") %></td>
+						</tr>
+						<tr class="boardtabletr">
+							<td>작성일자</td>
+							<td colspan="2"><%= bbs.getBodDate().substring(0,11) + bbs.getBodDate().substring(11, 13) + "시" 
                                 + bbs.getBodDate().substring(14,16) + "분"  %></td>
-									</tr>
-									<tr>
-										<td>내용</td>
-										<td colspan="2" style="min-height: 200px; text-align: left;">
-											<!-- 특수문자를 제대로 출력하기위해 & 악성스크립트를 방지하기위해 --> <%= bbs.getBodContent().replaceAll(" ","&nbsp;").replaceAll("<","&lt;").replaceAll(">", "&gt;").replaceAll("\n","<br>") %></td>
-									</tr>
-								</tbody>
-							</table>	
-							<a href="board" class="btn btn-primary">목록</a>
-							<%
+						</tr>
+						<tr class="boardtabletr">
+							<td>내용</td>
+							<td colspan="2" style="min-height: 200px; text-align: left;">
+								<!-- 특수문자를 제대로 출력하기위해 & 악성스크립트를 방지하기위해 --> <%= bbs.getBodContent().replaceAll(" ","&nbsp;").replaceAll("<","&lt;").replaceAll(">", "&gt;").replaceAll("\n","<br>") %></td>
+						</tr>
+						<tr class="boardtabletr">
+							<td>조회수</td>
+							<td colspan="2"><%=bbs.getBodCount() + 1%></td>
+						</tr>
+					</tbody>
+				</table>
+				<section class="page-section">
+					<div class="boardview">
+						<a href="board" class="btn btn-primary">목록</a>
+						<%
 				                if(userID != null && userID.equals(bbs.getUserID()))
 				                {
 				            %>
-							<a href="boardupdate?bodID=<%=bodID%>" class="btn btn-primary">수정</a>
-							<a onclick="return confirm('정말로 삭제하시겠습니까?')" href="boarddeleteAction?bodID=<%=bodID %>"
-								class="btn btn-primary">삭제</a>
+						<a href="boardupdate?bodID=<%=bodID%>" class="btn btn-primary">수정</a>
+						<a onclick="return confirm('정말로 삭제하시겠습니까?')"
+							href="boarddeleteAction?bodID=<%=bodID %>"
+							class="btn btn-primary">삭제</a>
 
-							<%     
+						<%     
 				                }
 				            %>
-						</div>
 					</div>
-</section>
+				</section>
+			</div>
+
+		</div>
+	</section>
 
 	<%@include file="../includes/unitfooter.jsp"%>
-	
 	<!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="../resources/js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Core theme JS-->
+	<script src="../resources/js/scripts.js"></script>
+	<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+	<!-- * *                               SB Forms JS                               * *-->
+	<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+	<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+	<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
 </body>
 </html>
