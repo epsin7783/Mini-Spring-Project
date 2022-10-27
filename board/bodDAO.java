@@ -33,11 +33,11 @@ public class bodDAO {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		return ""; //DB ¿À·ù 
+		return ""; //DB ì˜¤ë¥˜ 
 	}
 	
 	public int getNext() {
-		String SQL = "SELECT bodID FROM bod ORDER BY bodID DESC"; //ID¹Ş±â
+		String SQL = "SELECT bodID FROM bod ORDER BY bodID DESC"; //IDë°›ê¸°
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(SQL);
 			rs = pstmt.executeQuery();
@@ -48,10 +48,10 @@ public class bodDAO {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		return -1; //DB ¿À·ù 
+		return -1; //DB ì˜¤ë¥˜ 
 	}
 
-	public int write(String bodTitle, String userID, String bodContent){
+	public int write(String bodTitle, String userID, String bodContent, int bodCount){
 		String SQL = "INSERT INTO bod VALUES (?, ?, ?, ?, ?, ?)";
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(SQL);
@@ -61,11 +61,12 @@ public class bodDAO {
 			pstmt.setString(4, getDate());
 			pstmt.setString(5, bodContent);
 			pstmt.setInt(6, 1);
+			pstmt.setInt(7, bodCount);
 			return pstmt.executeUpdate();
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		return -1; //DB ¿À·ù 
+		return -1; //DB ì˜¤ë¥˜ 
 	}
 	
 	public ArrayList<bod> getList(int pageNumber){
@@ -83,6 +84,7 @@ public class bodDAO {
 				bbs.setBodDate(rs.getString(4));
 				bbs.setBodContent(rs.getString(5));
 				bbs.setBodAvailable(rs.getInt(6));
+				bbs.setBodCount(rs.getInt(7));
 				list.add(bbs);
 			}
 		}catch(Exception e) {
@@ -90,7 +92,7 @@ public class bodDAO {
 		}
 		return list; 
 	}
-	// ÇØ´ç ÆäÀÌÁö·Î ³Ñ¾î°¥ ¼ö ÀÖ´ÂÁö °Ë»ç 
+	// í•´ë‹¹ í˜ì´ì§€ë¡œ ë„˜ì–´ê°ˆ ìˆ˜ ìˆëŠ”ì§€ ê²€ì‚¬ 
 	public boolean nextPage(int pageNumber){
 		String SQL = "SELECT * FROM bod WHERE bodID < ? AND bodAvailable = 1";
 		try {
@@ -122,6 +124,10 @@ public class bodDAO {
 	                bbs.setBodDate(rs.getString(4));
 	                bbs.setBodContent(rs.getString(5));
 	                bbs.setBodAvailable(rs.getInt(6));
+	                int bodCount = rs.getInt(7);
+	                bbs.setBodCount(bodCount);
+	                bodCount++;
+	                countUpdate(bodCount,bodID);
 	                return bbs;
 		        }
         } catch (Exception e) {
@@ -129,6 +135,19 @@ public class bodDAO {
         }
         return null; 
     }
+	
+	public int countUpdate(int bodCount, int bodID) {
+		String SQL = "update bod set bodCount = ? where bodID = ?";
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(SQL);
+			pstmt.setInt(1, bodCount);
+			pstmt.setInt(2, bodID);
+			return pstmt.executeUpdate();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return -1;
+	}
 	
 	public int update(int bodID, String bodTitle, String bodContent) {	
 		String SQL = "UPDATE bod SET bodTitle = ?, bodContent = ? WHERE bodID = ?";
@@ -141,7 +160,7 @@ public class bodDAO {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		return -1; //DB ¿À·ù 
+		return -1; //DB ì˜¤ë¥˜ 
 	}
 
 	public int delete(int bodID) {
@@ -153,6 +172,8 @@ public class bodDAO {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		return -1; //DB ¿À·ù 
+		return -1; //DB ì˜¤ë¥˜ 
 	}
+	
+	
 }
