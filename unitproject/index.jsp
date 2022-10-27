@@ -299,7 +299,7 @@
 
 <!-- Portfolio item 1 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog" style="width:800px; height: 900px; margin-left: auto; margin-right: auto;">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="../resources/assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
@@ -326,7 +326,7 @@
         </div>
         <!-- Portfolio item 2 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog" style="width:800px; height: 900px; margin-left: auto; margin-right: auto;">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="../resources/assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
@@ -353,7 +353,7 @@
         </div>
         <!-- Portfolio item 3 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog" style="width:800px; height: 900px; margin-left: auto; margin-right: auto;">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="../resources/assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
@@ -378,7 +378,7 @@
         </div>
         <!-- Portfolio item 4 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog" style="width:800px; height: 900px; margin-left: auto; margin-right: auto;">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="../resources/assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
@@ -403,7 +403,7 @@
         </div>
         <!-- Portfolio item 5 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog" style="width:800px; height: 900px; margin-left: auto; margin-right: auto;">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="../resources/assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
@@ -428,7 +428,7 @@
         </div>
         <!-- Portfolio item 6 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog" style="width:800px; height: 900px; margin-left: auto; margin-right: auto;">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="../resources/assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
@@ -451,7 +451,6 @@
                 </div>
             </div>
         </div>
-
 
     
 
