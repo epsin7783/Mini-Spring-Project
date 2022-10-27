@@ -54,7 +54,7 @@
                     
                         <li class="nav-item"><a class="nav-link" href="about">여행정보(코로나)</a></li>
                         <li class="nav-item"><a class="nav-link" href="hotel">호텔</a></li>
-			<li class="nav-item"><a class="nav-link" href="map">지도</a></li>
+                        <li class="nav-item"><a class="nav-link" href="map">지도</a></li>
                         <li class="nav-item"><a class="nav-link" href="board">게시판</a></li>
                         <li class="nav-item"><a class="nav-link" href="weather">날씨</a></li>
                         <li class="nav-item"><a class="nav-link" href="signin">로그인</a></li>
@@ -65,7 +65,7 @@
                     
                         <li class="nav-item"><a class="nav-link" href="about">여행정보(코로나)</a></li>
                         <li class="nav-item"><a class="nav-link" href="hotel">호텔</a></li>
-			<li class="nav-item"><a class="nav-link" href="map">지도</a></li>
+                        <li class="nav-item"><a class="nav-link" href="map">지도</a></li>
                         <li class="nav-item"><a class="nav-link" href="board">게시판</a></li>
                         <li class="nav-item"><a class="nav-link" href="weather">날씨</a></li>
                         <li class="nav-item"><a class="nav-link" href="#"><%=userID %>님 환영합니다!</a></li>
@@ -80,8 +80,7 @@
         </nav>
         
          
-      
-       <!-- Masthead-->
+        <!-- Masthead-->
         <header class="masthead">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
@@ -98,9 +97,8 @@
             </div>
         </header>
 
-
  
- <!-- 세계시간-->
+        <!-- 세계시간-->
         
         <section class="page-section" id="globalTime">
         	<div class="container">
@@ -163,12 +161,13 @@
 				</table>
 			</div>
 
-		<p>&nbsp;</p>
-		<p>&nbsp;</p>
-		<div class="line_box holder" style="width: 65%;  margin-right: auto; margin-left: auto;">
-			<hr style="border-top-width:3px; border-color:rgba(0, 0, 0, 0.05);" />	
-		</div>
-	</section>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<div class="line_box holder" style="width: 65%;  margin-right: auto; margin-left: auto;">
+				<hr style="border-top-width:3px; border-color:rgba(0, 0, 0, 0.05);" />	
+			</div>
+		</section>
+
         
         
         
