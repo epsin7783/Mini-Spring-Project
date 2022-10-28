@@ -13337,7 +13337,7 @@ a{
 
 
 
-// 날씨 //
+/* 날씨 */
 .text-center {
 	display: flex;
 	justify-content: center;
@@ -13440,3 +13440,91 @@ h1.temp{
   background-attachment: scroll;
   background-size: cover;
 }
+
+/* 날씨 */
+
+/* 위젯 */
+
+		#icon2 {
+			z-index: 999;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			position: fixed;
+			top: 120px;
+			right: 5px;
+			border: 1px solid rgb(140, 102, 200);
+			background: white;
+			color: rgb(140, 102, 200);
+		}
+		#icon2_2 {
+			z-index: 999;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			position: fixed;
+			top: 120px;
+			right: 55px;
+			border: 1px solid rgb(140, 102, 200);
+			background: white;
+			color: rgb(140, 102, 200);
+		}
+		#icon2_3 {
+			z-index: 999;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			position: fixed;
+			top: 120px;
+			right: 105px;
+			border: 1px solid rgb(140, 102, 200);
+			background: white;
+			color: rgb(140, 102, 200);
+		}
+
+		.after {
+			background-color: rgb(140, 102, 200);
+			color: white;
+		}
+		
+		#icon2:hover {
+			background-color: rgb(140, 102, 200);
+			color: white;
+		}
+		#icon2_2:hover {
+			background-color: rgb(140, 102, 200);
+			color: white;
+		}
+		#icon2_3:hover {
+			background-color: rgb(140, 102, 200);
+			color: white;
+		}
+		.chatt {
+			z-index: 9998;
+			position: fixed;
+			top: 120px;
+			right: 5px;
+			border: 1px solid rgb(140, 102, 200);
+			border-radius: 5px;
+		}
+		.w1 {
+			z-index: 9997;
+			position: fixed;
+			top: 170px;
+			right: 5px;
+		}
+		.w2 {
+			z-index: 9996;
+			position: fixed;
+			top: 170px;
+			right: 5px;
+		}
+		.w3 {
+			z-index: 9996;
+			position: fixed;
+			top: 170px;
+			right: 5px;
+		}
+
+
+/* 위젯 */
