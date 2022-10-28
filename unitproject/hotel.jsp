@@ -76,6 +76,104 @@
                 </div>
             </div>
         </header>
+	    
+	    
+	<!-- 위젯 -->
+	<input type="button" class="icon2_3" id="icon2_3" value="계산">
+	<input type="button" class="icon2_2" id="icon2_2" value="환율">
+	<input type="button" class="icon2" id="icon2" value="위젯">
+	<input type="button" class="icon1" id="icon1" value="Chat">
+	<iframe src="Chatting" width="500px" height="500px" class="chatt"></iframe>
+	<div>
+		<iframe class="w1" id="w1" frameborder="0" scrolling="auto" height="195"
+			width="555" allowtransparency="true" marginwidth="0" marginheight="0" "
+			src="https://sslfxrates.forexprostools.com/index_exchange.php?params&inner-border-color=%23CBCBCB&border-color=%23cbcbcb&bg1=%23F6F6F6&bg2=%23ffffff&inner-text-color=%23000000&currency-name-color=%23000000&header-text-color=%23FFFFFF&force_lang=18"
+			align="center">
+			<br />
+			<div style="width: 540px; padding-left: 20px; padding-top: 20px;">
+				<a href="http://kr.investing.com" target="_blank"><img
+					src="https://wmt-invdn-com.investing.com/forexpros_kr_logo.png"
+					alt="Investing.com" title="Investing.com" style="float: left" /></a><span
+					style="float: right"><a href="https://kr.investing.com/"
+					rel="nofollow" target="_blank"
+					style="font-size: 11px; color: #06529D; font-weight: bold;"
+					class="underline_link">Investing.com 한국어</a><span
+					style="font-size: 11px; color: #333333; text-decoration: none;">제공하는
+						환율표.</span></span>
+			</div>
+		</iframe>
+	</div>
+		<iframe class="w2" id="w2" height="365" width="215" style="text-align: center; background-color: white; border-radius: 10px;"
+			src="https://ssltools.forexprostools.com/currency-converter/index.php?from=28&to=12&force_lang=18">
+			<table>
+				<tr>
+					<td><span
+						style="font-size: 11px; color: #333333; text-decoration: none;">외환가
+							제공하는 통화 변환기<a href="https://kr.investing.com/" rel="nofollow"
+							target="_blank"
+							style="font-size: 11px; color: #06529D; font-weight: bold;"
+							class="underline_link">Investing.com 한국어</a> - 외환포털
+					</span></td>
+				</tr>
+			</table>
+		</iframe>
+	<iframe class="w3" id="w3"
+		src="https://kr.widgets.investing.com/top-cryptocurrencies?theme=lightTheme&roundedCorners=true"
+		width="300" height="480" frameborder="0" allowtransparency="true"
+		marginwidth="0" marginheight="0">
+		<div class="poweredBy"
+			style="font-family: Arial, Helvetica, sans-serif;">
+			제공자 <a
+				href="https://kr.investing.com?utm_source=WMT&amp;utm_medium=referral&amp;utm_campaign=TOP_CRYPTOCURRENCIES&amp;utm_content=Footer%20Link"
+				target="_blank" rel="nofollow">Investing.com</a>
+		</div>
+	</iframe>
+
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+       <script>
+		$(function() {
+			$(".chatt").css("display", "none")
+			var show = function() {
+				$(".chatt").toggle();
+			}
+			$("#icon1").on("click", show);
+			$(".w1").css("display", "none");
+			$(".w2").css("display", "none");
+			$(".w3").css("display", "none");
+			$("#icon2_2").css("display", "none");
+			$("#icon2_3").css("display", "none");
+			var show1 = function() {
+				/* $(".w1").toggle(); */
+				$("#icon2_2").toggle();
+				$("#icon2_3").toggle();
+				$(".w1").css("display", "none");
+				$(".w2").css("display", "none");
+				$(".w3").css("display", "none");
+			}
+			$("#icon2").on("click", show1);
+			var show2 = function() {
+				$(".w1").toggle();
+				$(".w2").css("display", "none");
+				$(".w3").css("display", "none");
+			}
+			$("#icon2_2").on("click", show2);
+			var show3 = function() {
+				$(".w2").toggle();
+				$(".w1").css("display", "none");
+				$(".w3").css("display", "none");
+			}
+			$("#icon2_3").on("click", show3);
+			var show4 = function() {
+				$(".w3").toggle();
+				$(".w2").css("display", "none");
+				$(".w1").css("display", "none");
+			}
+		})
+	</script>
+	
+    <!-- 위젯 -->
+	    
+	    
 
 <%@include file="../includes/unitfooter.jsp" %>
 
